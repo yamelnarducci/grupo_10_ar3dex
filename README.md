@@ -15,7 +15,7 @@
 * [Cults3D](https://cults3d.com/)
 Nos gusta la gran cantidad de divisiones por categorias y opciones de búsqueda.
 
-* [Media market](https://mediamarket.com/)
+* [Media market](https://www.mediamarkt.es/)
 De esta página nos gustó la sección de productos.
 
 * [Pet Universe](https://pets-universe.onrender.com/)
