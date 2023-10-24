@@ -16,7 +16,7 @@
 Nos gusta la gran cantidad de divisiones por categorias y opciones de búsqueda.
 
 * [Media market](https://www.mediamarkt.es/)
-De esta página nos gustó la sección de productos.
+De esta página nos gustó la sección de productos, por como esta seccionado y por como se ve el area de caracteristicas.
 
 * [Pet Universe](https://pets-universe.onrender.com/)
 De esta página nos gustó el home
