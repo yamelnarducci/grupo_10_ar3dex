@@ -1,14 +1,4 @@
 {
-  "name": "proyectointegrador",
-  "version": "1.0.0",
-  "description": "## Somos estudiantes becados en el curso para desarrolladores fullstack realizado por Digital House. Nuestro objetivo es crear una página de venta de productos impresos en 3D, más precisamente FDM, apuntamos a buscar una idea más innovadora con temática de anime y comics . Publico al que apuntamos: Fanáticos y aficionados de los cómics, mangas, anime, dibujos animados de todas las épocas y películas clásicas. No conformes con esa alta grilla de productos disponibles también contamos con el excelente beneficio de poder crear esas ideas locas que nuestros clientes tienen en su cabeza, pero aún no existen físicamente.",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
   }

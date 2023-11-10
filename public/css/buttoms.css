@@ -1,0 +1,15 @@
+.button {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.button__primary {
+    background-color: var(--colorAzul);
+    color:white;
+}
+
+.button__segundo {
+    background-color: var(--colorGris);
+    color:white;
+}
