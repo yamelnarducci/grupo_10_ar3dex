@@ -1,0 +1,142 @@
+
+
+/*Mobile*/
+
+header{
+    
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: var(--tipografiaGeneral);
+}
+
+
+
+.header__section__div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo img{
+    width: 50vh;
+    margin: left;
+}
+
+.tittle {
+    font-size: 2.5vh;
+    font-weight: 600;
+}
+
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.search-bar-input{
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    padding: 6px;
+    border: 2px solid rgb(212, 212, 212);
+}
+
+
+#lupita{
+    background-color: white;
+    padding: 9px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px ;
+
+
+}
+
+.promos{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    font-weight: 600;
+    color: #edf0f3;
+}
+
+.promos i {
+    margin-right: 3px;
+    
+
+}
+
+
+header nav {
+    display:none;
+}
+
+.header nav ul{
+    margin-top: 10px; /*Separo los ul*/
+    color: #eaeaea;
+}
+
+
+
+
+.home_header_mobile_hamburger{
+    background-color: #1259c3;
+    padding: 15px;
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 10px;
+
+}
+
+
+
+@media (min-width:768px) {
+    
+
+    .logo img{
+        width: 35vh;
+        margin: left;
+    }
+    .header__section__div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .home_header_mobile_hamburger{
+        display: none;
+    }
+
+    header nav {/*Este separó las opciones, 4 para un lado y 3 para el otro */
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 40px;
+    }
+
+    header nav ul{/*Este puso en fila las opciones*/
+        display: flex;
+        gap: 10px; /*Separa a los hijos entre sí*/
+    }
+
+    .promos{
+        display: flex;
+
+    }
+}
+
+@media (min-width: 1024px){
+    .logo img{
+        width: 30vh;
+        margin: left;
+    }
+
+}

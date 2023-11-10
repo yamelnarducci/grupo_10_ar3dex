@@ -1,0 +1,35 @@
+body {
+    font-family: 'inter';
+    max-width: 1140px;
+    margin: 0 auto;
+    font-family: var(--tipografiaGeneral);
+    background-image: url('/img/dragonballz.jpeg');
+
+}
+
+.box__end {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.box__card {
+    max-width: 1440px;
+    width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px #24c773;
+    border-radius: 5px;
+}
+
+.box__card--title {
+    margin-bottom: 30px;
+    text-align: start;
+    color: var(--colorVioleta);
+}
+
+.link {
+    color: var(--colorVioleta);
+}

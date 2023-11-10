@@ -1,12 +1,12 @@
 :root {
---tipografiaGeneral : 'Inter', sans-serif;
---colorGris : #7a7a7a;
---colorAzul : #2372e8;
---colorVerde : #24c773;
---colorVioleta : #801E6A;
+    --tipografiaGeneral : 'Inter', 'sans-serif';
+    --colorGris : #7a7a7a;
+    --colorAzul : #2372e8;
+    --colorVerde : #24c773;
+    --colorVioleta:#801E6A;
 }
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,16 +14,14 @@
 
 a {
     text-decoration: none;
-    color : black;
+    color : white;
 }
 
 li {
     list-style: none;
 }
 
-textarea {
-    resize: none;
-}
+
 
 body {
     font-family: var(--tipografiaGeneral);

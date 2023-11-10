@@ -1,0 +1,9 @@
+.register__main{
+    width: 90%;
+    margin: 50px auto;
+    padding: 5px;
+    background-color: var(--colorVioleta);
+    box-shadow: 5px 5px 5px black;
+    border-radius: 5px;
+    
+}
