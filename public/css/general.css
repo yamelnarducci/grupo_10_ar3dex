@@ -24,7 +24,10 @@ li {
 
 
 body {
-    font-family: var(--tipografiaGeneral);
-    max-width: 1140px;
+    font-family: 'inter';
+    max-width: 1920px;
     margin: 0 auto;
+    font-family: var(--tipografiaGeneral);
+    background-image: url('/img/dragonballz.jpeg');
+
 }

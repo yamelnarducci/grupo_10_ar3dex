@@ -11,10 +11,22 @@
 .form__box__2 {
     margin-bottom: 20px;
     width: 100%;
-    font-size: 70%;
+    font-size: 90%;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    color: aliceblue;
     display: flex;
     justify-content: center;
+    
 }
+
+.form__box__p{
+    color: aliceblue;
+    text-align: center;
+    padding:20px;
+}
+
+
 
 .form__box--position {
     position: relative;
@@ -31,12 +43,13 @@
 
 .form__label {
     margin-bottom: 20px;
+    color:var(--colorAzul);
 }
 
 .form__input {
     width: 100%;
     padding: 8px;
-    border-radius: 5px;
+    border-radius: 15px;
     border: 1px solid #c0c0c0;
     margin-top: 10px;
 }

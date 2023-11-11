@@ -1,9 +1,20 @@
-.register__main{
+/*.register__main{
     width: 90%;
-    margin: 50px auto;
+    margin: 20px auto;
     padding: 5px;
-    background-color: var(--colorVioleta);
+    background-color: rgb(30, 75, 114);
     box-shadow: 5px 5px 5px black;
     border-radius: 5px;
     
+}*/
+
+.box__card--title {/*Titulo*/
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--colorAzul);
+    font-size: 3vh;
+}
+
+.link {/*Restablecer contraseña*/
+    color:#24c7c7;
 }
