@@ -1,19 +1,21 @@
 .form {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .form__box {
     margin-bottom: 20px;
     width: 100%;
+    
 }
 
 .form__box__2 {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     width: 100%;
     font-size: 90%;
-    padding-bottom: 40px;
-    padding-top: 20px;
+    padding-bottom: 1px;
+    padding-top: 30px;
     color: aliceblue;
     display: flex;
     justify-content: center;
@@ -52,6 +54,7 @@
     border-radius: 15px;
     border: 1px solid #c0c0c0;
     margin-top: 10px;
+    box-shadow: 2px 2px 5px #9124c7;
 }
 
 
