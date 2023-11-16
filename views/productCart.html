@@ -54,26 +54,27 @@
             </div>
             </article>
         </section>
-        <form action="/comprar-producto" method="post">
-            <div>
+        <form action="/comprar-producto" method="post" class="productCart_form">
+            <div class="productCart_form_div">
                 Subtotal(sin envio): 45.000,00
             </div>
-            <img src="/img/gokuenvio-removebg-preview.png" alt="goku" ><p>Medios de envio</p>
-            <div>
+            <div class="productCart_Envio"><img src="/img/gokuenvio-removebg-preview.png" alt="goku" class="goku_envio">
+            <p>Medios de envio</p></div>
+            <div class="productCart_form_div">
                <label>Tu Codigo Postal:</label>
             </div>
-            <div>
+            <div class="productCart_form_div">
                Retirar por el local:    $0
             </div>
-            <div>
+            <div class="productCart_form_div">
                Direccion del local: Av.Mitre 2020
             </div>
-            <div>
+            <div class="total">
                 <p>Total: $45.000,00</p>
                 <p>O hasta 3 cuotas sin interes</p>
             </div>
             
-                <button type="submit">Iniciar Compra</button>
+                <div class="productCart_div"><button type="submit" class="button">Iniciar Compra</button></div>
             
         </form>
     </main>

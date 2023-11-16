@@ -73,14 +73,46 @@ width: 50px
     margin: 20px;
     justify-content: space-between;
     align-items: center;
+    border-radius: 5px;
 }
 .productCart_main_section_article_div p{
     font-size: 10px;
+    
 }
 .basura{
     margin-right: 5px;
 }
-
+.productCart_form{
+    border: solid 1px black;
+    margin: 0px 50px;
+    border-radius: 5px;
+}
+.productCart_form_div{
+    border: solid 1px black;
+    margin: 10px 10px;
+    border-radius: 5px;
+}
+.goku_envio{
+    width: 10%;
+}
+.productCart_Envio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.total{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.productCart_div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.button{
+    background-color: var(--colorAzul);
+}
 
     
     @media (min-width: 768px){
