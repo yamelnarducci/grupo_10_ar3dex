@@ -70,11 +70,15 @@ width: 50px
 .productCart_main_section_article_div{
     border: solid 1px black;
     display: flex ;
-    width: 100%;
-   
+    margin: 20px;
+    justify-content: space-between;
+    align-items: center;
 }
 .productCart_main_section_article_div p{
     font-size: 10px;
+}
+.basura{
+    margin-right: 5px;
 }
 
 
