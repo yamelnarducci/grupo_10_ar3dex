@@ -1,29 +1,25 @@
 body{
-    background-image: url();
-    }
-    .header {
-        background-color: var(--colorGris);
+    background-image: url('/img/Fondo.jpeg');
     }
     .logo{
         width: 200px;
-        position: relative;
-        bottom: 15px;
-    }
+        }
     .hamburguer{
-        background-color: var(--colorVioleta);
+        background: rgb(0,0,0);
+        background: linear-gradient(-180deg, rgba(0,0,0,1) 8%, rgba(128,30,106,1) 100%);
         color: var(--colorGris);
         border: solid 1px black;
         padding: 5px 8px;
-        display: block;
         border-radius: 3px;
         max-height: 40px;
         max-width: 50px;
         font-size: 1.5rem;
-        order: -1;
-        margin-top: 10px;
+         margin-top: 10px;
+
     }
     .iconos{
         margin-top: 15px;
+        display: none;
     }
     .nav_bar{
         display: none;
@@ -31,7 +27,6 @@ body{
     .carrito{
     margin-top: 20px;
     color: white;
-    display: none;
     }
     .cuenta{
         margin-top: 20px;
@@ -39,21 +34,21 @@ body{
     }
     .header_main{
         display: flex;
-        justify-content: space-around;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
     }
-    .search{
-       position: relative;
-       bottom: 50px;
+    .search-bar{
        border: solid 1px black;
        display:block;
        background-color: var(--colorVioleta);
-      margin: 0px 20px;
+      display: none;
     }
-    .search i{
+    .search-bar i{
         margin-left: 10px;
         margin-right: 5px;
     }
-    .search a{
+    .search-bar a{
         color: var(--colorGris);
     }
 .producto{
@@ -74,9 +69,10 @@ width: 50px
     justify-content: space-between;
     align-items: center;
     border-radius: 5px;
+    background-color: var(--colorFucsia);
 }
 .productCart_main_section_article_div p{
-    font-size: 10px;
+    font-size: 13px;
     
 }
 .basura{
@@ -86,11 +82,17 @@ width: 50px
     border: solid 1px black;
     margin: 0px 50px;
     border-radius: 5px;
+    background-color: #D9D9D9;
 }
 .productCart_form_div{
-    border: solid 1px black;
+    
     margin: 10px 10px;
     border-radius: 5px;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
 }
 .goku_envio{
     width: 10%;
@@ -110,9 +112,17 @@ width: 50px
     flex-wrap: wrap;
     justify-content: center;
 }
-.button{
+.productCart_button{
     background-color: var(--colorAzul);
+    width: 100%;
+    border: solid 1px black;
+    margin: 10px 10px;
+    border-radius: 5px;
+    height: 35px;
 }
+/*.productCart_text{
+    text-indent: 5px;
+}*/
 
     
     @media (min-width: 768px){
@@ -121,6 +131,7 @@ width: 50px
         justify-content: center;
     }
     .iconos{
+        display: flex;
         position: absolute;
         right: 50px;
         top: 50px;
@@ -135,20 +146,17 @@ width: 50px
         bottom: 40px;
         width: 400px;
      }
-     .search{
-        position: relative;
-        left: 480px;
-        bottom: 139px;
-        margin-right: 480px;
+     .search-bar{
+        display:flex;
      }
-     
+     .carrito{
+        display: block;
+     }
      .hamburguer{
         display: none;
      }
      .nav_bar{
-        display: block;
-        position: relative;
-        bottom: 160px;
+        display: flex;
      }
      .nav_bar div{
         border: solid 1px black;
@@ -161,11 +169,23 @@ width: 50px
      }
      .nav_bar li{
         margin: 0px 5px;
-        padding: 0px 15px;
+        padding: 3px 20px;
+        text-align: center;
         }
      .nav_bar a{
         color: var(--colorGris);
-     }   
+     }  
+     #lupita{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+     }
+     .barra{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       height: 30px;
+     } 
     }
     @media (min-width: 1024px) {
         .nav_bar li {
