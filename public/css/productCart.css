@@ -1,55 +1,5 @@
 body{
-    background-image: url('/img/Fondo.jpeg');
-    }
-    .logo{
-        width: 150px;
-        margin-top: 40px;
-        }
-    .hamburguer{
-        background: linear-gradient(-180deg, rgba(0,0,0,1) 8%, rgba(128,30,106,1) 100%);
-        color: var(--colorGris);
-        border: solid 1px black;
-        padding: 5px 8px;
-        border-radius: 3px;
-        max-height: 40px;
-        max-width: 50px;
-        font-size: 1.5rem;
-         margin-top: 10px;
-
-    }
-    .iconos{
-    display: none;
-    }
-    .nav_bar{
-        display: none;
-    }
-    .carrito{
-    margin-top: 20px;
-    color: white;
-    }
-    .cuenta{
-        margin-top: 20px;
-        color: white;
-    }
-    .header_main{
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-items: center;
-    }
-    .search-bar{
-       border: solid 1px black;
-       display:block;
-       background-color: var(--colorVioleta);
-      display: none;
-    }
-    .search-bar i{
-        margin-left: 10px;
-        margin-right: 5px;
-    }
-    .search-bar a{
-        color: var(--colorGris);
-    }
+    background-image: url('/img/Fondo.jpeg');}
 /*carrito*/
 .article_img{
 width: 50px
@@ -132,72 +82,8 @@ width: 50px
 
     
 @media (min-width: 768px){
-    .header_main{
-        display: flex;
-        justify-content: center;
-    }
-    .iconos{
-        display: flex;
-        position: absolute;
-        right: 50px;
-        top: 50px;
-        font-size: 30px;
-      }
-      .cuenta{
-        position: relative;
-        left: 5px;
-      }
-     .logo{
-        position: relative;
-        bottom: 40px;
-        width: 400px;
-     }
-     .search-bar{
-        display:flex;
-     }
-     .carrito{
-        display: block;
-     }
-     .hamburguer{
-        display: none;
-     }
-     .nav_bar{
-        display: flex;
-     }
-     .nav_bar div{
-        border: solid 1px black;
-        background: linear-gradient(-180deg, rgba(0,0,0,1) 8%, rgba(128,30,106,1) 100%);
-
-     }
-     .nav_bar ul{
-        display: flex;
-        }
-     .nav_bar li{
-        margin: 0px 5px;
-        padding: 3px 20px;
-        }
-     .nav_bar a{
-        color: var(--colorGris);
-        font-weight: bold;
-        text-shadow: 1px 1px 1px black;
-        
-     }  
-     #lupita{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-     }
-     .barra{
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: center;
-       height: 30px;
-     }
-     .carrito{
-        display: block;
-     }
      /*carrito tablet*/
-     main{
+ main{
       display: flex;
       align-items: flex-end;
       margin-top: 40px;
@@ -238,12 +124,6 @@ width: 50px
     }
 }
     @media (min-width: 1024px) {
-        .nav_bar li {
-            font-size: 25px;
-         }
-         .iconos{
-            font-size: 40px;
-         }
          .productCart_main_section_article_div p {
             font-size: 20px;
          }
