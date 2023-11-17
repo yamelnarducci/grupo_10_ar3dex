@@ -4,9 +4,10 @@
 --colorAzul : #2372e8;
 --colorVerde : #24c773;
 --colorVioleta : #801E6A;
+--colorFucsia : #8507A4;
 }
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,19 +15,20 @@
 
 a {
     text-decoration: none;
-    color : black;
+    color : white;
 }
 
 li {
     list-style: none;
 }
 
-textarea {
-    resize: none;
-}
+
 
 body {
-    font-family: var(--tipografiaGeneral);
-    max-width: 1140px;
+    font-family: 'inter';
+    max-width: 1366px;
     margin: 0 auto;
+    font-family: var(--tipografiaGeneral);
+    background-image: url('/img/dragonballz.jpeg');
+
 }
