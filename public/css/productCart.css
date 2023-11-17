@@ -131,7 +131,7 @@ width: 50px
 }*/
 
     
-    @media (min-width: 768px){
+@media (min-width: 768px){
     .header_main{
         display: flex;
         justify-content: center;
@@ -236,6 +236,7 @@ width: 50px
         display: block;
         padding: 2px;
     }
+}
     @media (min-width: 1024px) {
         .nav_bar li {
             font-size: 25px;
@@ -247,4 +248,4 @@ width: 50px
             font-size: 20px;
          }
          
-    }
+        }
