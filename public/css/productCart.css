@@ -2,7 +2,8 @@ body{
     background-image: url('/img/Fondo.jpeg');
     }
     .logo{
-        width: 200px;
+        width: 100px;
+        margin-top: 50px;
         }
     .hamburguer{
         background: rgb(0,0,0);
@@ -18,8 +19,7 @@ body{
 
     }
     .iconos{
-        margin-top: 15px;
-        display: none;
+         display: none;
     }
     .nav_bar{
         display: none;
@@ -51,6 +51,7 @@ body{
     .search-bar a{
         color: var(--colorGris);
     }
+/*carrito*/
 .producto{
 width: 50px
 }
@@ -164,13 +165,10 @@ width: 50px
      }
      .nav_bar ul{
         display: flex;
-        justify-content:flex-start;
-        
-     }
+        }
      .nav_bar li{
         margin: 0px 5px;
         padding: 3px 20px;
-        text-align: center;
         }
      .nav_bar a{
         color: var(--colorGris);
@@ -185,15 +183,30 @@ width: 50px
        flex-wrap: wrap;
        justify-content: center;
        height: 30px;
+     }
+     .carrito{
+        display: none;
+     }
+     /*.div_ul{
+        padding: 0px 1px;
+     }*/
+     /*carrito tablet*/
+     .producto{
+        width: 100%;
      } 
+     .productCart_main_section_article_div_images{
+        border: solid 1px black;
+        display: none;
+     }
+
+     
     }
     @media (min-width: 1024px) {
         .nav_bar li {
-            padding: 3px 15px;
+            font-size: 25px;
          }
-         .search{
-            position: relative;
-            bottom: 133px;
-            padding: 3px 0px;
+         .iconos{
+            font-size: 40px;
          }
+         
     }
