@@ -2,11 +2,10 @@ body{
     background-image: url('/img/Fondo.jpeg');
     }
     .logo{
-        width: 100px;
-        margin-top: 50px;
+        width: 150px;
+        margin-top: 40px;
         }
     .hamburguer{
-        background: rgb(0,0,0);
         background: linear-gradient(-180deg, rgba(0,0,0,1) 8%, rgba(128,30,106,1) 100%);
         color: var(--colorGris);
         border: solid 1px black;
@@ -52,7 +51,7 @@ body{
         color: var(--colorGris);
     }
 /*carrito*/
-.producto{
+.article_img{
 width: 50px
 }
 .productCart_section{
@@ -74,7 +73,8 @@ width: 50px
 }
 .productCart_main_section_article_div p{
     font-size: 13px;
-    
+    color: white;
+    text-shadow: 1px 1px 1px black;
 }
 .basura{
     margin-right: 5px;
@@ -89,7 +89,7 @@ width: 50px
     
     margin: 10px 10px;
     border-radius: 5px;
-    height: 30px;
+    padding: 5px 0px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -106,7 +106,9 @@ width: 50px
 .total{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    text-align: center; 
+    align-items: center;
+    flex-direction: column
 }
 .productCart_div{
     display: flex;
@@ -120,6 +122,9 @@ width: 50px
     margin: 10px 10px;
     border-radius: 5px;
     height: 35px;
+}
+.contador{
+    display: none;
 }
 /*.productCart_text{
     text-indent: 5px;
@@ -161,7 +166,8 @@ width: 50px
      }
      .nav_bar div{
         border: solid 1px black;
-        background-color: var(--colorVioleta);
+        background: linear-gradient(-180deg, rgba(0,0,0,1) 8%, rgba(128,30,106,1) 100%);
+
      }
      .nav_bar ul{
         display: flex;
@@ -172,6 +178,9 @@ width: 50px
         }
      .nav_bar a{
         color: var(--colorGris);
+        font-weight: bold;
+        text-shadow: 1px 1px 1px black;
+        
      }  
      #lupita{
         display: flex;
@@ -187,9 +196,6 @@ width: 50px
      .carrito{
         display: none;
      }
-     /*.div_ul{
-        padding: 0px 1px;
-     }*/
      /*carrito tablet*/
      main{
       display: flex;
@@ -203,10 +209,12 @@ width: 50px
         top: 1px;
         border: solid 2px black;
         padding: 10px;
+        background: rgb(122,122,122);
+        background: linear-gradient(-180deg, rgba(122,122,122,1) 8%, rgba(122,122,122,0.2721463585434174) 85%);
      }
      
       .producto2{
-         left: 20vw;
+         left: 21vw;
      } 
      .producto3{
          left: 40vw;
@@ -218,8 +226,15 @@ width: 50px
         margin: 10px;
         padding: 10px;
     }
-
-     
+    .productCart_main_section_article_div p {
+        font-size: 13px;
+    }
+    .contador{
+        background-color: var(--colorGris);
+        border-radius: 10px;
+        border: solid 1px black;
+        display: block;
+        padding: 2px;
     }
     @media (min-width: 1024px) {
         .nav_bar li {
@@ -227,6 +242,9 @@ width: 50px
          }
          .iconos{
             font-size: 40px;
+         }
+         .productCart_main_section_article_div p {
+            font-size: 20px;
          }
          
     }
