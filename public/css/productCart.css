@@ -18,7 +18,7 @@ body{
 
     }
     .iconos{
-         display: none;
+    display: none;
     }
     .nav_bar{
         display: none;
@@ -194,7 +194,7 @@ width: 50px
        height: 30px;
      }
      .carrito{
-        display: none;
+        display: block;
      }
      /*carrito tablet*/
      main{
