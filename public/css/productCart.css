@@ -83,7 +83,7 @@ width: 50px
     
 @media (min-width: 768px){
      /*carrito tablet*/
- main{
+     .main_productos{
       display: flex;
       align-items: flex-end;
       margin-top: 40px;
@@ -100,10 +100,10 @@ width: 50px
      }
      
       .producto2{
-         left: 21vw;
+         left: 21%;
      } 
      .producto3{
-         left: 40vw;
+         left: 40%;
      } 
      .productCart_main_section_article_div_images{
         border: solid 1px black;
