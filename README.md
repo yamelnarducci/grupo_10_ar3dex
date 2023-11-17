@@ -6,7 +6,7 @@
 
 * **Yamel Narducci** . Edad: *38 años*. Ciudad: *Lomas de Zamora*. Me gusta: Friends, bailar, El tiempo que se disfruta es el verdadero tiempo vivido.
 * **Luís Rondón** . Edad: *33 años*. Ciudad: *Capital Federal*. Me gusta: Los Simpsons, el asado y el Real Madrid. Todo lo puedo en Cristo que me fortalece.
-* **Eric Martinez** . Edad: *19 años*. Ciudad: *Lanús*. Me gusta: Dragonball, las hambuguesas y Boquita. Un gran poder conlleva una gran responsabilidad.
+* **Eric Martinez** . Edad: *19 años*. Ciudad: *Lanús*. Me gusta: Dragonball, las hambuguesas y Boquita se gana la septima. Un gran poder conlleva una gran responsabilidad.
 * **Kevin Alexis Espinola** . Edad: *22 años*. Ciudad: *Jose. C. Paz*. Me gusta: Video juegos. 
 * **Martín Romero** . Edad: *34 años*. Ciudad: *Merlo, Buenos Aires*. Me gusta: Volver al futuro, la pizza y los cubos. 
 
@@ -16,7 +16,7 @@
 Nos gusta la gran cantidad de divisiones por categorias y opciones de búsqueda.
 
 * [Media market](https://www.mediamarkt.es/)
-De esta página nos gustó la sección de productos.
+De esta página nos gustó la sección de productos, por como esta seccionado y por como se ve el area de caracteristicas.
 
 * [Pet Universe](https://pets-universe.onrender.com/)
 De esta página nos gustó el home

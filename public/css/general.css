@@ -1,9 +1,10 @@
 :root {
-    --tipografiaGeneral : 'Inter', 'sans-serif';
-    --colorGris : #7a7a7a;
-    --colorAzul : #2372e8;
-    --colorVerde : #24c773;
-    --colorVioleta:#801E6A;
+--tipografiaGeneral : 'Inter', sans-serif;
+--colorGris : #7a7a7a;
+--colorAzul : #2372e8;
+--colorVerde : #24c773;
+--colorVioleta : #801E6A;
+--colorFucsia : #8507A4;
 }
 
 *{
