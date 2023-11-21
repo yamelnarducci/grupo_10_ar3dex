@@ -1,0 +1,89 @@
+.footer__div {
+    margin-top: 20px;
+    background-color: var(--colorFucsia);
+    width: 100%;
+}
+
+.footer__div__nav__redes{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer__div__nav__redes a {
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+
+.footer__div__div__logos img {
+    width: 35%;
+    margin-left: 30%;
+    margin-top: 10px;
+}
+
+.footer__div__div__copyrigth {
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    
+}
+
+.footer__div__div__copyrigth h5 {
+    text-decoration: underline;
+}
+
+.footer__div__metodos--pago--envio {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+.footer__div__metodos--pago--envio img {
+    width: 20%;
+}
+
+.footer__div__metodos--pago--envio--pago {
+    margin-left: 20px;
+}
+
+.footer__div__metodos--pago--envio--envio {
+    margin-right: 20px;
+    
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+    .footer__div__nav__redes a {
+        font-size: 35px;
+        margin-right: 10px;
+    
+    }
+
+    .footer__div__div__logos img {
+        width: 20%;
+        margin-left: 40%;
+    }
+
+    .footer__div__div__copyrigth {
+        font-size: 20px;
+        
+    }
+
+    .footer__div__metodos--pago--envio img {
+        width: 25%;
+    }
+    
+    .footer__div__metodos--pago--envio--pago {
+        margin-left: 40px;
+    }
+    
+    .footer__div__metodos--pago--envio--envio {
+        margin-right: 40px;
+        
+    }
+
+}
