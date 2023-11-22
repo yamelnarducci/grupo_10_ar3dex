@@ -10,6 +10,55 @@
 </head>
 
 <body class="detalleProducto">
+
+    <header class="header">
+        <section>
+          <div class="header_main">
+            <a href="/"><img src="/img/Logo.png" alt="logo" class="logo" /></a>
+  
+            <a href="#" class="hamburguer">
+              <i class="fa fa-bars"></i>
+            </a>
+            <span class="iconos">
+              <a href="/product-cart" class="carrito"><i class="fa-solid fa-cart-plus"></i></a>
+              <a href="/login" class="cuenta"><i class="fa-regular fa-user"></i></a>
+            </span>
+          </div>
+        </section>
+  
+        <div class="barra">
+          <nav class="nav_bar">
+            <ul>
+              <div class="div_ul">
+                <li><a href="#">Figuras</a></li>
+              </div>
+              <div class="div_ul">
+                <li><a href="#">Coleccion</a></li>
+              </div>
+              <div class="div_ul">
+                <li><a href="#">Contactos</a></li>
+              </div>
+              <div class="div_ul">
+                <li><a href="#">Blog</a></li>
+              </div>
+              <div class="div_ul">
+                <li><a href="#">Ofertas</a></li>
+              </div>
+            </ul>
+          </nav>
+          <div class="search-bar">
+            <input
+              class="search-bar-input"
+              type="text"
+              placeholder="Buscar productos..."
+            /><i
+              class="fa-solid fa-magnifying-glass"
+              id="lupita"
+              style="color: #969696"
+            ></i>
+          </div>
+        </div>
+      </header>
     <main class="detalleProducto__main">
         <article class="detalleProducto__main__articule">
             <div class="detalleProducto__main__articule__div__nombre-y-imagen">
@@ -131,14 +180,21 @@
                 <div class="footer__div__div__logos">
                     <img src="/img/Logo.png" alt="">
                 </div>
-                <div class="footer__div__div__copyrigth">
-                    <p>Copyrigth&copy; 2023 Ar3Dex, inc</p>
-                    <h5>Informacion Legal | Politicas de privacidad</h5>
+                <div class="bajo-footer">
+                    <div class="footer__div__metodos--pago--envio">
+                        
+                        <img class="footer__div__metodos--pago--envio--envio" src="/img/footer/formas-envio.png" alt="formas de envio">
+                        
+                        <div class="footer__div__div__copyrigth">
+                            <p>Copyrigth&copy; 2023 Ar3Dex, inc</p>
+                            <h5>Informacion Legal | Politicas de privacidad</h5>
+                        </div>
+                        <img class="footer__div__metodos--pago--envio--pago" src="/img/footer/formas-pago.png" alt="formas de pago">
+                    </div>
+                    
+                    
                 </div>
-                <div class="footer__div__metodos--pago--envio">
-                    <img class="footer__div__metodos--pago--envio--pago" src="/img/footer/formas-pago.png" alt="formas de pago">
-                    <img class="footer__div__metodos--pago--envio--envio" src="/img/footer/formas-envio.png" alt="formas de envio">
-                </div>
+                
             </div>
         </footer>
 </body>

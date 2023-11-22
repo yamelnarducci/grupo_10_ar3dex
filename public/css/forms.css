@@ -29,6 +29,12 @@
 }
 
 
+.form__box__pp{
+    color: rgb(10, 28, 43);
+    text-align: center;
+    padding:20px;
+}
+
 
 .form__box--position {
     position: relative;
