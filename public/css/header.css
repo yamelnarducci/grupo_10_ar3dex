@@ -39,6 +39,7 @@ body {
   flex-wrap: nowrap;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 40px;
 }
 .search-bar {
   border: solid 1px black;
@@ -117,6 +118,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     height: 30px;
+    margin-bottom: 40px;
   }
   .carrito {
     display: block;
