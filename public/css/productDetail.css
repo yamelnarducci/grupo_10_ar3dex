@@ -1,0 +1,422 @@
+/* mobile */
+
+.detalleProducto {
+    width: 90%;
+    margin-top: 10px;
+    background-image: url("/img/productDetail/Fondo.png");
+}
+
+.detalleProducto__main{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+
+    
+}
+
+.detalleProducto__main__articule {
+    width: 100%;
+}
+
+.detalleProducto__main__articule__div__nombre-y-imagen{
+    background: linear-gradient(to top, rgba(122, 122, 122, 0.4), white);
+    border: 5px solid var(--colorVioleta);
+}
+
+.detalleProducto__main__articule__div__nombre-y-imagen h2 {
+  color: white;
+  font-size: 18px; 
+  margin-bottom: 10px;
+  border-bottom: 3px solid var(--colorVioleta);
+  background-color: rgb(50, 50, 50, 0.8);
+  text-shadow: 2px 2px 2px black;
+  padding: 5px
+}
+
+.detalleProducto__main__articule__div__nombre-y-imagen img {
+    width: 75%;
+}
+
+.detalleProducto__main__articule__variaciones {
+    display: none;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.detalleProducto__main__articule__div__nombre-y-imagen__div__carrusel {
+    display: none;
+}
+
+.detalleProducto__main__articule__div__pago {
+display: flex;
+flex-direction: column;
+color: white;
+
+}
+
+.detalleProducto__main__articule__div__pago__precio {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 10px;
+margin-bottom: 3px;
+}
+
+.detalleProducto__main__articule__div__pago__precio__precioNormal {
+    font-size: 22px;
+    margin-left: 30px;
+    text-shadow: 2px 2px 2px black;
+    text-decoration: line-through black;
+}
+
+.detalleProducto__main__articule__div__pago__precio__precioOferta {
+    font-size: 30px;
+    margin-left: 5px;
+    margin-right: 35px;
+    text-shadow: 3px 3px 3px black;
+}
+
+.detalleProducto__main__articule__div__precios__lineaSeparadora {
+    border-top: 5px solid white; 
+    margin-bottom: 10px; 
+    
+    
+}
+
+.detalleProducto__main__articule__div__precios__cuotas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px; 
+    padding: 2px;
+}
+
+.detalleProducto__main__articule__div__precios__cuotas p {
+   font-size: 14px;
+}
+
+.detalleProducto__main__articule__div__precios__btnAgregarCarrito {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border-radius: 30px;
+    border: 5px solid white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.detalleProducto__main__articule__div__precios__formasDePago {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    width: 60%;
+}
+
+.detalleProducto__main__articule__caracteristicas {
+    width: 100%;
+}
+
+.detalleProducto__main__articule__caracteristicas__div__caracteristicas {
+    background-color: var(--colorGris);
+    color: white;
+    text-shadow: 3px 3px 3px black;
+
+}
+
+.detalleProducto__main__articule__caracteristicas__div__detalles {
+    display: flex;
+    width: 100%;
+    background: linear-gradient(to top left, rgb(171, 84, 171), transparent);
+   
+}
+
+.detalleProducto__main__articule__caracteristicas__div__detalles img {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    
+
+}
+
+.detalleProducto__main__articule__caracteristicas__div__detalles__material{
+    color: white;
+    width: 100%;
+    padding-bottom: 10px;
+    text-shadow: 3px 3px 3px black;
+}
+
+.detalleProducto__main__articule__caracteristicas__div__detalles__material h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.detalleProducto__main__articule__caracteristicas__div__detalles__material--tablet {
+    display: none;
+}
+
+.detalleProducto__main__articule__caracteristicas__div__detalles--2 {
+    display: none;
+}
+
+.detalleProducto__main__articule__caracteristicas--3 {
+    display: none;
+}
+
+.detalleProducto__main__articule__puedeInteresar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.detalleProducto__main__articule__puedeInteresar__div__titulo {
+    width: 100%;
+    font-size: 14px;
+    margin-top: 40px;
+    background: linear-gradient(to bottom right, rgb(131, 128, 128), transparent);
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    border: 3px solid black;
+}
+
+.detalleProducto__main__articule__puedeInteresar__div__producto {
+    background-color: var(--colorVioleta);
+}
+
+.detalleProducto__main__articule__puedeInteresar__div__producto img {
+    width: 50%;
+    margin-top: 50px;
+    background: linear-gradient(to bottom right, rgb(131, 128, 128), transparent);
+    border: 5px solid black;
+}
+
+.detalleProducto__main__articule__puedeInteresar__div__producto h4 {
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.detalleProducto__main__articule__puedeInteresar__div__producto--2 {
+    display: none;
+}
+
+.detalleProducto__main__articule__puedeInteresar__div__producto--3 {
+    display: none;
+}
+
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+    .detalleProducto__main__articule {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .detalleProducto__main__articule__variaciones {
+        display: inline;
+        
+    }
+
+    .detalleProducto__main__articule__div__nombre-y-imagen__div__carrusel {
+        display: inline;
+        width: 100%;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+    }
+
+    .detalleProducto__main__articule__div__nombre-y-imagen {
+        width: 100%;
+        margin-right: 20px;
+    }
+
+
+    .detalleProducto__main__articule__div__nombre-y-imagen__div__carrusel img {
+       width: 30%;
+       background: linear-gradient(to top, rgba(122, 122, 122, 0.4), white);
+       border: 5px solid var(--colorVioleta);
+
+    }
+
+    .detalleProducto__main__articule__div__pago {
+    width: 80%;
+    
+    }
+
+   
+    .detalleProducto__main__articule__caracteristicas__div__detalles {
+        background: transparent;
+        justify-content: space-between;
+    }
+
+    .detalleProducto__main__articule__caracteristicas__div__detalles__imagen img {
+        width: 120%;
+        margin-right: 120px;
+        background: linear-gradient(to top left, rgb(171, 84, 171), transparent);
+
+    }
+
+    .detalleProducto__main__articule__caracteristicas__div__detalles__material {
+        color: black;
+        text-shadow: none;
+        background-color: white;
+        margin-top: 28px;
+        margin-left: 80px;
+        font-size: 20px;
+        width: 100%;
+        padding: 20px;
+        text-align: justify;
+        border: 5px solid var(--colorVioleta);
+        
+    }
+
+    .detalleProducto__main__articule__caracteristicas__div__detalles__material h3 {
+        text-align: center;
+    }
+
+    
+    .detalleProducto__main__articule__caracteristicas__div__detalles__material--mobile {
+        display: none;
+    }
+
+    .detalleProducto__main__articule__caracteristicas__div__detalles__material--tablet {
+        display: inline;
+
+    }
+
+    .detalleProducto__main__articule__caracteristicas__div__detalles--2 {
+        display: flex;
+        background: transparent;
+        justify-content: space-between;
+        
+    }
+
+    .detalleProducto__main__articule__caracteristicas__div__detalles__material--2{
+        color: black;
+        text-shadow: none;
+        background-color: white;
+        margin-top: 28px;
+        margin-right: 40px;
+        font-size: 20px;
+        width: 100%;
+        padding: 30px;
+        text-align: justify;
+        border: 5px solid var(--colorVioleta);
+    
+
+    }
+
+    .detalleProducto__main__articule__caracteristicas__div__detalles__imagen--2 img {
+       
+        width: 100%;
+        margin-top: 30px;
+        margin-right: 150px;
+        background: linear-gradient(to top left, rgb(171, 84, 171), transparent);
+    }
+
+
+    .detalleProducto__main__articule__caracteristicas__div__detalles__material--2 h3 {
+        text-align: center;
+        margin-bottom: 20px;
+
+    }
+
+    
+    .detalleProducto__main__articule__caracteristicas--3 {
+    display: flex;
+    }
+  
+    .detalleProducto__main__articule__puedeInteresar__div__producto {
+    display: flex;
+    justify-content: space-between;
+
+    }
+    
+    .detalleProducto__main__articule__puedeInteresar__div__producto--2 {
+        display: inline;
+    }
+
+    .detalleProducto__main__articule__puedeInteresar__div__producto--3 {
+        display: none;
+    }
+}
+
+/* desktop */
+
+@media (min-width: 1140px){
+
+    .detalleProducto__main__articule__div__nombre-y-imagen h2 {
+        font-size: 30px;
+    }
+    
+    .detalleProducto__main__articule__puedeInteresar__div__producto--3 {
+        display: inline;
+    }
+
+    .detalleProducto__main__articule__div__pago__precio__precioNormal {
+        font-size: 40px;
+        margin-left: 70px;
+     }
+    
+    .detalleProducto__main__articule__div__pago__precio__precioOferta {
+        font-size: 50px;
+    }
+
+    .detalleProducto__main__articule__div__precios__cuotas p {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .detalleProducto__main__articule__div__precios__cuotas h2 {
+        font-size: 40px;
+        margin-right: 30px;
+    }
+
+    .detalleProducto__main__articule__variaciones {
+        font-size: 20px;
+
+    }
+
+    .detalleProducto__main__articule__caracteristicas__div__caracteristicas {
+        font-size: 40px;
+
+    }
+
+    .detalleProducto__main__articule__caracteristicas__div__detalles__material h3 {
+        font-size: 40px;
+    } 
+
+    .detalleProducto__main__articule__caracteristicas__div__detalles__material--tablet {
+        font-size: 25px;
+
+    }
+
+    .detalleProducto__main__articule__caracteristicas__div__detalles__material--2 h3 {
+        font-size: 40px;
+
+    }
+
+    .detalleProducto__main__articule__caracteristicas__div__detalles__material--tablet--2 {
+        font-size: 30px;
+
+    }
+
+    .detalleProducto__main__articule__puedeInteresar__div__titulo{
+        font-size: 20px;
+
+    }
+
+}
