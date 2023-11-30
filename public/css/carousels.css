@@ -9,8 +9,7 @@
     background-position: center;
     background-size: cover;
     width: 25%;
-    max-width: 235px;
-    transition: all 5s;
+    max-width: 285px;
 }
 
 .swiper-slide img {
