@@ -29,6 +29,6 @@ body {
     max-width: 1366px;
     margin: 0 auto;
     font-family: var(--tipografiaGeneral);
-    background-image: url('/img/dragonballz.jpeg');
+    background-image: url('/images/dragonballz.jpeg');
 
 }

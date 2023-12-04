@@ -3,7 +3,7 @@
 .detalleProducto {
     width: 90%;
     margin-top: 10px;
-    background-image: url("/img/productDetail/Fondo.png");
+    background-image: url("/images/productDetail/Fondo.png");
 }
 
 .detalleProducto__main{

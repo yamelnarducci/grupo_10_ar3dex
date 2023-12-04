@@ -1,5 +1,5 @@
 body {  
-    background-image: url('/img/Background.png');
+    background-image: url('/images/Background.png');
 }
 
 /* BANNER/OFERTA */
@@ -30,7 +30,7 @@ body {
 
 .index__main__section__article--carousel--box-text {
     color: white;
-    background-image: url('/img/Price-Background.png');
+    background-image: url('/images/Price-Background.png');
     background-size: 100%;
     background-repeat: round;
     padding: 7% 0;

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head',{
+  title:"Carrito"
+}) %>
+<body>
+    <%- include('./partials/header') %>
+
+    <main class="main_productos">
+      <section class="productCart_section">
+        <article class="productCart_section_article">
+          <div class="productCart_main_section_article_div">
+            <span class="productCart_main_section_article_div_images">
+              <img src="/images/goku.png" alt="producto" class="producto1 article_img" />
+              <p class="contador">-| 1 |+</p>
+            </span>
+            <p>Figura coleccionable-Goku Saga Saiyajins: $20.000,00</p>
+            <a href="basura" class="basura"
+              ><i class="fa-solid fa-trash-can"></i
+            ></a>
+          </div>
+        </article>
+        <article class="productCart_section_article">
+          <div class="productCart_main_section_article_div">
+            <span class="productCart_main_section_article_div_images">
+              <img src="/images/gogeta.png" alt="producto" class="producto2 article_img" />
+              <p class="contador">-| 1 |+</p>
+            </span>
+            <p>Figura coleccionable-Fusion Gogeta: $21.000,00</p>
+            <a href="basura" class="basura"
+              ><i class="fa-solid fa-trash-can"></i
+            ></a>
+          </div>
+        </article>
+        <article class="productCart_section_article">
+          <div class="productCart_main_section_article_div">
+            <span class="productCart_main_section_article_div_images">
+              <img src="/images/mate.png" alt="producto" class="producto3 article_img"/>
+              <p class="contador">-| 2 |+</p>
+            </span>
+            <p>Mate Akatsuki-Naruto(2): $4.000,00</p>
+            <a href="basura" class="basura"
+              ><i class="fa-solid fa-trash-can"></i
+            ></a>
+          </div>
+        </article>
+      </section>
+      <form action="/comprar-producto" method="post" class="productCart_form">
+        <div class="productCart_form_div">
+          <p class="productCart_text">Subtotal(sin envio): 45.000,00</p>
+        </div>
+        <div class="productCart_Envio">
+          <img
+            src="/images/gokuenvio-removebg-preview.png"
+            alt="goku"
+            class="goku_envio"
+          />
+          <p class="productCart_text">Medios de envio</p>
+        </div>
+        <div class="productCart_form_div">
+          <label class="productCart_text">Tu Codigo Postal:</label>
+        </div>
+        <div class="productCart_form_div">
+          <p class="productCart_text">Retirar por el local: $0</p>
+        </div>
+        <div class="productCart_form_div">
+          <p class="productCart_text">Direccion del local: Av.Mitre 2020</p>
+        </div>
+        <div class="total">
+          <p class="productCart_text">Total: $45.000,00</p>
+          <p class="productCart_text">O hasta 3 cuotas sin interes</p>
+        </div>
+
+        <div class="productCart_div">
+          <button type="submit" class="productCart_button">
+            Iniciar Compra
+          </button>
+        </div>
+      </form>
+    </main>
+        <%- include('./partials/footer') %>
+  </body>
+</html>
