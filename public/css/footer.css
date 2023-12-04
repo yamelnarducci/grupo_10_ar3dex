@@ -1,0 +1,102 @@
+.footer__div {
+    margin-top: 20px;
+    background: linear-gradient(to top, #801E6A, #381002);
+    color: white;
+    width: 100%;
+}
+
+.footer__div__nav__redes{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.footer__div__nav__redes a {
+    font-size: 20px;
+    margin-right: 10px;
+
+}
+
+.footer__div__div__logos img {
+    width: 35%;
+    margin-left: 30%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.footer__div__div__copyrigth {
+    text-align: center;
+    font-size: 13px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.footer__div__div__copyrigth h5 {
+    text-decoration: underline;
+}
+
+.footer__div__metodos--pago--envio {
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer__div__metodos--pago--envio img {
+    width: 10%;
+    height: 10%;
+}
+
+.footer__div__metodos--pago--envio--pago {
+    margin-top: 30px;
+    height: 5%;
+}
+
+.footer__div__metodos--pago--envio--envio {
+    padding-top: 20px;
+    display: none;
+    
+}
+
+.footer__div__metodos--pago--envio--pago{
+    display: none;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+    .footer__div__nav__redes a {
+        font-size: 35px;
+        margin-right: 10px;
+    
+    }
+
+    .footer__div__div__logos img {
+        width: 15%;
+        margin-left: 43%;
+        padding-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    .footer__div__div__copyrigth {
+        font-size: 20px;
+        margin-top: 60px;
+        
+    }
+
+    .footer__div__metodos--pago--envio {
+        display:flex;
+        flex-direction: row-reverse;
+        align-items: flex-end;
+    }
+    
+    
+    .footer__div__metodos--pago--envio--envio {
+        
+        display: block;
+        
+    }
+    
+    .footer__div__metodos--pago--envio--pago{
+        display: block;
+    }
+
+}

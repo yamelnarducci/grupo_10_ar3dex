@@ -1,0 +1,92 @@
+body {  
+    background-image: url('/img/Background.png');
+}
+
+/* BANNER/OFERTA */
+
+.index__main__section--banner img {
+    width: 100%
+}
+
+/* PRODUCTOS DESTACADOS */
+
+.index__main__section__article--carousel:hover {
+    box-shadow: 0px 0px 20px 2px var(--colorGris);
+    position: relative;
+    bottom: 40px;
+}
+
+.index__main__section__article--carousel--box-img {
+    position: relative;
+    
+}
+
+.index__main__section__article--carousel--product-img {
+    position: absolute;
+    bottom:28%;
+    z-index: 10;
+    overflow: visible;
+}
+
+.index__main__section__article--carousel--box-text {
+    color: white;
+    background-image: url('/img/Price-Background.png');
+    background-size: 100%;
+    background-repeat: round;
+    padding: 7% 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2.5vw;
+    position: relative;
+    z-index: 20;
+}
+
+.index__main__section__article--carousel--name,.index__main__section__article--carousel--price {
+    text-align: center;
+    color: #E2E2E2;
+    text-shadow: 2px 2px 2px #000000;
+    width: 100%;
+}
+
+/* CATEGORÍAS DESTACADAS */
+
+.index__main__section--categories {
+    font-size: 2.5vw;
+    display: flex;
+    justify-content: center;
+}
+
+.index__main__section--categories img {
+    width: 100%;
+}
+.index__main__section__article--category--name {
+    text-align: center;
+    color: #E2E2E2;
+    text-shadow: 0px 2px 8px #000000;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .index__main__section__article--carousel--name,.index__main__section__article--carousel--price {
+        font-size: 1.4rem;
+        letter-spacing: 0.035em;
+        text-shadow: 2px 2px 2px #000000;
+    }
+    .index__main__section__article--carousel--product-img {
+        bottom:27%;
+    }
+
+
+    .index__main__section__article--category img:hover {
+        background: rgb(212,212,212);
+        background: radial-gradient(circle, rgba(212,212,212,1) 0%, rgba(0,0,0,0) 60%);
+        bottom: 20px;
+        position: relative;
+    }
+
+    .index__main__section--categories {
+        font-size: 1.4rem;
+    }
+
+}
+
