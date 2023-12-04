@@ -270,9 +270,8 @@ margin-bottom: 3px;
     }
 
     .detalleProducto__main__articule__caracteristicas__div__detalles__material {
-        color: black;
-        text-shadow: none;
-        background-color: white;
+        color: rgb(255, 255, 255);
+        background: linear-gradient(to top left, rgb(171, 84, 171), transparent);
         margin-top: 28px;
         margin-left: 80px;
         font-size: 20px;
@@ -304,20 +303,7 @@ margin-bottom: 3px;
         
     }
 
-    .detalleProducto__main__articule__caracteristicas__div__detalles__material--2{
-        color: black;
-        text-shadow: none;
-        background-color: white;
-        margin-top: 28px;
-        margin-right: 40px;
-        font-size: 20px;
-        width: 100%;
-        padding: 30px;
-        text-align: justify;
-        border: 5px solid var(--colorVioleta);
     
-
-    }
 
     .detalleProducto__main__articule__caracteristicas__div__detalles__imagen--2 img {
        
