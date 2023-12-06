@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "name": "Kurama",
+        "description": " Naruto/ 21cm x 14cm PLA",
+        "price" : 80,
+        "category": "Figura",
+        "mainImage": "Figura-1.png",
+        "images": []
+    },
+    {
+        "id": 2,
+        "name": "Luffy",
+        "description": "One piece/ figura colgante 18cm x 19,5cm PLA",
+        "price" : 60,
+        "category": "Figura",
+        "mainImage": "Figura-2.png",
+        "images": []
+    },
+    {
+        "id": 3,
+        "name": "Vegeta",
+        "description": "Dragonball Z/ 34cm x 24cm PLA ",
+        "price" : 60,
+        "category": "Figura",
+        "mainImage": "Figura-3.png",
+        "images": []
+    },
+    {
+        "id": 4,
+        "name": "Naruto",
+        "description": "Naruto/ 25cm x 17cm PLA  ",
+        "price" : 45,
+        "category": "Figura",
+        "mainImage": "Figura-4.png",
+        "images": []
+    },
+    {
+        "id": 5,
+        "name": "Bolbasor",
+        "description": "Pokemon/ ternurita de 4cm x 4cm PLA",
+        "price" : 25,
+        "category": "Llavero",
+        "mainImage": "Figura-5.png",
+        "images": []
+    }
+]
