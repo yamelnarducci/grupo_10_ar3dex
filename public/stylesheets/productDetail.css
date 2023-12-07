@@ -265,24 +265,8 @@ margin-bottom: 3px;
         justify-content: space-between;
     }
 
-    .detalleProducto__main__articule__caracteristicas__div__detalles__imagen img {
-        width: 120%;
-        margin-right: 120px;
-        background: linear-gradient(to top left, rgb(171, 84, 171), transparent);
-
-    }
-
     .detalleProducto__main__articule__caracteristicas__div__detalles__material {
-        color: rgb(255, 255, 255);
         background: linear-gradient(to top left, rgb(171, 84, 171), transparent);
-        margin-top: 28px;
-        margin-left: 80px;
-        font-size: 20px;
-        width: 100%;
-        padding: 20px;
-        text-align: justify;
-        border: 5px solid var(--colorVioleta);
-        
     }
 
     .detalleProducto__main__articule__caracteristicas__div__detalles__material h3 {
@@ -298,48 +282,12 @@ margin-bottom: 3px;
         display: inline;
 
     }
-
-    .detalleProducto__main__articule__caracteristicas__div__detalles--2 {
-        display: flex;
-        background: transparent;
-        justify-content: space-between;
-        
-    }
-
-    
-
-    .detalleProducto__main__articule__caracteristicas__div__detalles__imagen--2 img {
-       
-        width: 100%;
-        margin-top: 30px;
-        margin-right: 150px;
-        background: linear-gradient(to top left, rgb(171, 84, 171), transparent);
-    }
-
-
-    .detalleProducto__main__articule__caracteristicas__div__detalles__material--2 h3 {
-        text-align: center;
-        margin-bottom: 20px;
-
-    }
-
-    
-    .detalleProducto__main__articule__caracteristicas--3 {
-    display: flex;
-    }
   
     .detalleProducto__main__articule__puedeInteresar__div__producto {
     display: flex;
     justify-content: space-around;
     }
     
-    .detalleProducto__main__articule__puedeInteresar__div__producto--2 {
-        display: inline;
-    }
-
-    .detalleProducto__main__articule__puedeInteresar__div__producto--3 {
-        display: none;
-    }
 }
 
 /* desktop */
@@ -348,10 +296,6 @@ margin-bottom: 3px;
 
     .detalleProducto__main__articule__div__nombre-y-imagen h2 {
         font-size: 30px;
-    }
-    
-    .detalleProducto__main__articule__puedeInteresar__div__producto--3 {
-        display: inline;
     }
 
     .detalleProducto__main__articule__div__pago__precio__precioNormal {

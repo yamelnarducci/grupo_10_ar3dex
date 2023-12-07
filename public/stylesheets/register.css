@@ -1,6 +1,6 @@
 
 .box__card--title {/*Titulo*/
-    margin-bottom: 30px;
+    
     text-align: center;
     color: var(--colorAzul);
     font-size: 3vh;
@@ -13,10 +13,19 @@
 .redes-sociales{
     margin-top: 20px;
     text-align: center;
+    margin-bottom: 30px;
     
 }
 
 .redes-sociales i{
-    padding-top: 20px;
+    
     color: var(--colorAzul);
+}
+
+.redes-sociales p{
+    margin: unset;
+}
+
+hr{
+    margin:unset;
 }

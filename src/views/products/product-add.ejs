@@ -1,84 +1,87 @@
 <!DOCTYPE html>
 <html lang="ES">
 
-<%- include('../partials/head',{
-	title : 'Agregar artículo | Ar3Dex'
-}) %>
+<%- include('../partials/head',{ title : 'Agregar artículo | Ar3Dex' }) %>
 
 
-<body>
-    
-    <main class="container dashboard__main">
-        <section class="row my-5" >
-            <div class="col-12 col-md-10 mx-auto">
-                <div class="card border-dark dashboard__main--card">
-                    <div class="card-header d-flex justify-content-between">
-                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                              <li class="breadcrumb-item"><a href="/admin" class="text-primary">Admin</a></li>
-                              <li class="breadcrumb-item active" aria-current="page">Nuevo producto</li>
-                            </ol>
-                          </nav>
-                    </div>
-                    <div class="card-body">
-                        <form action="" class="row">
-                            <h3 class="dashboard__main__card--custom-text">Nuevo Producto</h3>
-                            <hr>
-                            <div class="col-12 col-md-6 mb-3">
-                                <div class="form-floating">
-                                    <input name="name" type="text" class="form-control bg-dark-subtle" id="name" >
-                                    <label for="name" class="body-dark-subtle">Nombre</label>
-                                  </div>
-                            </div>
-                            <div class="col-12 col-md-6 mb-3">
-                                <div class="input-group">
+    <body>
+
+        <main class="container dashboard__main">
+            <section class="row my-5">
+                <div class="col-12 col-md-10 mx-auto">
+                    <div class="card border-dark dashboard__main--card">
+                        <div class="card-header d-flex justify-content-between">
+                            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="/admin" class="text-primary">Admin</a></li>
+                                    <li class="breadcrumb-item active text-secondary" aria-current="page">Nuevo producto
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                        <div class="card-body">
+                            <form action="" class="row">
+                                <h3 class="dashboard__main__card--custom-text">Nuevo Producto</h3>
+                                <hr>
+                                <div class="col-12 col-md-6 mb-3">
                                     <div class="form-floating">
-                                        <input name="price" type="text" class="form-control bg-dark-subtle" id="price">
-                                        <label for="price">Precio</label>
+                                        <input name="name" type="text" class="form-control bg-dark-subtle" id="name">
+                                        <label for="name" class="body-dark-subtle">Nombre</label>
                                     </div>
-                                    <span class="input-group-text">$</span>
                                 </div>
-                            </div>
-                            <div class="col-12 col-md-6 mb-3">
-                                <div class="form-floating">
-                                    <select name="category" class="form-select  bg-dark-subtle" id="category" aria-label="Floating label select example">
-                                      <option value="" selected hidden></option>
-                                      <option value="picadores">Picadores</option>
-                                      <option value="mates">Mates</option>
-                                      <option value="figuras">Figuras</option>
-                                      <option value="mascaras">Máscaras</option>
-                                      <option value="laveros">Llaveros</option>
-                                    </select>
-                                    <label for="category">Categoría</label>
-                                  </div>
-                              </div>
-                              <div class="col-12 col-md-3 mb-3">
-                                  <input name="mainImage" type="file" class="form-control" id="mainImage" hidden>
-                                  <label class="btn btn-lg btn-outline-light w-100" for="mainImage">Imagen principal</label>
-                              </div>
-                              <div class="col-12 col-md-3 mb-3">
-                                <input  name="images" type="file" class="form-control" id="images" hidden multiple>
-                                <label class="btn btn-lg btn-outline-light w-100" for="images">Imágenes</label>
-                            </div>
-                            <div class="col-12 mb-3">
-                                <div class="form-floating">
-                                    <textarea name="description" class="form-control bg-dark-subtle" id="description" style="height: 200px;"></textarea>
-                                    <label for="description">Agrega una descripción</label>
-                                  </div>
-                            </div>
-                           
-                            <div class="col-12 d-flex justify-content-end">
-                                <button class="btn btn-lg btn-dark btn-outline-light ">Agregar producto</button>
-                            </div>
-                        </form>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <div class="input-group">
+                                        <div class="form-floating">
+                                            <input name="price" type="text" class="form-control bg-dark-subtle" id="price">
+                                            <label for="price">Precio</label>
+                                        </div>
+                                        <span class="input-group-text">$</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <div class="form-floating">
+                                        <select name="category" class="form-select  bg-dark-subtle" id="category"
+                                            aria-label="Floating label select example">
+                                            <option value="" selected hidden></option>
+                                            <option value="picadores">Picadores</option>
+                                            <option value="mates">Mates</option>
+                                            <option value="figuras">Figuras</option>
+                                            <option value="mascaras">Máscaras</option>
+                                            <option value="laveros">Llaveros</option>
+                                        </select>
+                                        <label for="category">Categoría</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3 mb-3">
+                                    <input name="mainImage" type="file" class="form-control" id="mainImage" hidden>
+                                    <label class="btn btn-lg btn-outline-light w-100" for="mainImage">Imagen
+                                        principal</label>
+                                </div>
+                                <div class="col-12 col-md-3 mb-3">
+                                    <input name="images" type="file" class="form-control" id="images" hidden multiple>
+                                    <label class="btn btn-lg btn-outline-light w-100" for="images">Imágenes</label>
+                                </div>
+                                <div class="col-12 mb-3">
+                                    <div class="form-floating">
+                                        <textarea name="description" class="form-control bg-dark-subtle"
+                                            id="description" style="height: 200px;"></textarea>
+                                        <label for="description">Agrega una descripción</label>
+                                    </div>
+                                </div>
 
+                                <div class="col-12 d-flex justify-content-end">
+                                    <button class="btn btn-lg btn-dark btn-outline-light ">Agregar producto</button>
+                                </div>
+                            </form>
+
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <%- include('../partials/scripts') %>
+        <%- include('../partials/scripts') %>
 
-</body>
+    </body>
+
 </html>

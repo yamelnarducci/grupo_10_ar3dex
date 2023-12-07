@@ -49,7 +49,7 @@
    */
   
   hr {
-    box-sizing: content-box; /* 1 */
+   /*  box-sizing: content-box; /* 1 */  /* Comenté esta línea porque creaba un pequeño fallo */
     height: 0; /* 1 */
     overflow: visible; /* 2 */
   }
