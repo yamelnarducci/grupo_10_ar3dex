@@ -1,9 +1,10 @@
 <article class="swiper-slide index__main__section__article--carousel">
     <a href="/productos/detalle/:id">
-      <img class="index__main__section__article--carousel--product-img" src="/images/Figura-1.png">
+      <img class="index__main__section__article--carousel--product-img" src="/images/<%= mainImage  %>">
       <img class="index__main__section__article--carousel--box-img" src="/images/Article-Frame.png" />
       <div class="index__main__section__article--carousel--box-text">
-      <h4 class="index__main__section__article--carousel--name">ProductName</h4>
-      <h4 class="index__main__section__article--carousel--price">$$$$</h4>
+        <!--<p><%= description %></p>-->
+      <h4 class="index__main__section__article--carousel--name"><%= name %></h4>
+      <h4 class="index__main__section__article--carousel--price"><%= price %></h4>
     </div></a>
   </article>
