@@ -28,9 +28,9 @@ width: 50px
 }
 .basura{
     margin: 5px;
-    font-size: larger;
+    font-size: 50px;
     padding: 3px;
-    border: 1px solid black;
+    color: aliceblue;
     border-radius: 2px;
 }
 .basura:hover{
