@@ -9,30 +9,30 @@
     <main class="detalleProducto__main">
         <article class="detalleProducto__main__articule">
             <div class="detalleProducto__main__articule__div__nombre-y-imagen">
-                <h2>GOKU LA FIGURA DE ACCION ARTICULADA IMPRESA EN 3D</h2>
-                <img src="/images/productDetail/017-removebg-preview.png" alt="Goku base">
+                <h2><%= name %></h2>
+                <img src="/images/<%= mainImage %>" alt="...">
             </div>
             <div class="detalleProducto__main__articule__div__pago">
                 <div class="detalleProducto__main__articule__div__pago__precio">
-                    <p class="detalleProducto__main__articule__div__pago__precio__precioNormal">$40.000</p>
-                    <h3 class="detalleProducto__main__articule__div__pago__precio__precioOferta">$20.000</h3>
+                    <p class="detalleProducto__main__articule__div__pago__precio__precioNormal"><%= price %>USD$</p>
+                    <h3 class="detalleProducto__main__articule__div__pago__precio__precioOferta"><%= price * 0.75 %>USD$</h3>
                 </div>
                 <hr class="detalleProducto__main__articule__div__precios__lineaSeparadora">
                 <div class="detalleProducto__main__articule__div__precios__cuotas">
                     <p>Hasta 3 cuotas sin interés de </p>
-                    <h2>$6.666</h2>
+                    <h2><%= Math.round((price * 0.75) / 3)  %>USD$</h2>
                 </div>
                 <h4 class="detalleProducto__main__articule__variaciones">VARIACIONES</h4>
                 <div class="detalleProducto__main__articule__div__nombre-y-imagen__div__carrusel">
-                    <img src="/images/productDetail/goku-saiyan1.png" alt="goku-saiyan1">
-                    <img src="/images/productDetail/goku-saiyan2.png" alt="goku-saiyan2">
-                    <img src="/images/productDetail/goku-saiyan3.png" alt="goku-saiyan3">
+                    <img src="/images/<%= typeof images[0] === "undefined" ? mainImage : images[0]  %>"alt="...">
+                    <img src="/images/<%= typeof images[1] === "undefined" ? mainImage : images[1]  %>" alt="...">
+                    <img src="/images/<%= typeof images[2] === "undefined" ? mainImage : images[2]  %>" alt="...">
                 </div>
                 <a href="/product-cart">
                 <button class="detalleProducto__main__articule__div__precios__btnAgregarCarrito">
                     AGREGAR AL CARRITO </button>
                 </a>
-                <img src="/img/productDetail/Formas-de-pago-opciones-scaled.png" alt="formas de pago"
+                <img src="/images/Formas-de-pago-opciones-scaled.png" alt="formas de pago"
                     class="detalleProducto__main__articule__div__precios__formasDePago">
             </div>
         </article>
@@ -42,17 +42,12 @@
             </div>
             <div class="detalleProducto__main__articule__caracteristicas__div__detalles">
                 <div class="detalleProducto__main__articule__caracteristicas__div__detalles__imagen">
-                    <img src="/images/productDetail/goku-kame-ha.png" alt="goku-kame-ha">
+                    <img src="/images/<%= typeof images[0] === "undefined" ? mainImage : images[0] %>" alt="...">
                 </div>
                 <div class="detalleProducto__main__articule__caracteristicas__div__detalles__material">
                     <h3>MATERIAL</h3>
-                    <P class="detalleProducto__main__articule__caracteristicas__div__detalles__material--mobile">Hecho
-                        en material ABS. el filamento ABS es un material muy duro y resitente en estado solido</P>
-                    <P class="detalleProducto__main__articule__caracteristicas__div__detalles__material--tablet">
-                        Hecho en material ABS para la impresion 3D. Si hablamos de tipos de impresion, este es sin dudas
-                        el mas utilizado en la impresion 3D, el filamento ABS, es un material muy duro y resitente en
-                        estado
-                        solido. No obstante, tambien puede encontrarse en formato polvo o en liquido </P>
+                    <P class="detalleProducto__main__articule__caracteristicas__div__detalles__material--mobile"><%= description %></P>
+                    <P class="detalleProducto__main__articule__caracteristicas__div__detalles__material--tablet"><%= description %></P>
                 </div>
             </div>
         </article>
@@ -62,28 +57,16 @@
                 <h2>Tambien puede interesar</h2>
             </div>
             <div class="detalleProducto__main__articule__puedeInteresar__div__producto">
-
-
-                <div class="detalleProducto__main__articule__puedeInteresar__div__producto--1">
-                    <a href="/product-detail">
-                    <img src="/images/productDetail/vegeta-base.png" alt="vegeta-base">
-                    <h4>Vegueta estado base</h4></a>
+                <div class=" mt-4 d-flex flex-column flex-md-row">
+                    <% productosRelacionados.forEach(({id,mainImage,name})=> { %>
+                        <%- include('../partials/relacionados',{ 
+                            id,
+                            mainImage,
+                            name, 
+                        })%>
+                        <% }) %>
+                    </div>
                 </div>
-
-
-                <div class="detalleProducto__main__articule__puedeInteresar__div__producto--2">
-                    <a href="/product-detail">
-                    <img src="/images/productDetail/piccollo.png" alt="piccollo">
-                    <h4>Piccolo Daimaku</h4></a>
-                </div>
-
-
-                <div class="detalleProducto__main__articule__puedeInteresar__div__producto--3">
-                    <a href="/product-detail">
-                    <img src="/images/productDetail/kid-buu.png" alt="kid-buu">
-                    <h4>Kid Buu</h4></a>
-                </div>
-            </div>
 
         </article>
     </main>

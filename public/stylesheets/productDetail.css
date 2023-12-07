@@ -188,30 +188,33 @@ margin-bottom: 3px;
 }
 
 .detalleProducto__main__articule__puedeInteresar__div__producto {
-    background-color: var(--colorVioleta);
+    background: linear-gradient(to top, var(--colorVioleta), black);
+    text-align: center;
+
 }
 
 .detalleProducto__main__articule__puedeInteresar__div__producto img {
-    width: 50%;
+    /* width: 50%;
     margin-top: 50px;
-    background: linear-gradient(to bottom right, rgb(131, 128, 128), transparent);
+    background: linear-gradient(to bottom right, rgb(131, 128, 128), transparent); */
     border: 5px solid black;
+    width: 19vw;
 }
 
 .detalleProducto__main__articule__puedeInteresar__div__producto h4 {
     color: white;
     text-shadow: 3px 3px 3px black;
     font-size: 20px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
-.detalleProducto__main__articule__puedeInteresar__div__producto--2 {
+/* .detalleProducto__main__articule__puedeInteresar__div__producto--2 {
     display: none;
 }
 
 .detalleProducto__main__articule__puedeInteresar__div__producto--3 {
     display: none;
 }
-
+ */
 
 /* Tablet */
 
@@ -262,24 +265,8 @@ margin-bottom: 3px;
         justify-content: space-between;
     }
 
-    .detalleProducto__main__articule__caracteristicas__div__detalles__imagen img {
-        width: 120%;
-        margin-right: 120px;
-        background: linear-gradient(to top left, rgb(171, 84, 171), transparent);
-
-    }
-
     .detalleProducto__main__articule__caracteristicas__div__detalles__material {
-        color: rgb(255, 255, 255);
         background: linear-gradient(to top left, rgb(171, 84, 171), transparent);
-        margin-top: 28px;
-        margin-left: 80px;
-        font-size: 20px;
-        width: 100%;
-        padding: 20px;
-        text-align: justify;
-        border: 5px solid var(--colorVioleta);
-        
     }
 
     .detalleProducto__main__articule__caracteristicas__div__detalles__material h3 {
@@ -295,49 +282,12 @@ margin-bottom: 3px;
         display: inline;
 
     }
-
-    .detalleProducto__main__articule__caracteristicas__div__detalles--2 {
-        display: flex;
-        background: transparent;
-        justify-content: space-between;
-        
-    }
-
-    
-
-    .detalleProducto__main__articule__caracteristicas__div__detalles__imagen--2 img {
-       
-        width: 100%;
-        margin-top: 30px;
-        margin-right: 150px;
-        background: linear-gradient(to top left, rgb(171, 84, 171), transparent);
-    }
-
-
-    .detalleProducto__main__articule__caracteristicas__div__detalles__material--2 h3 {
-        text-align: center;
-        margin-bottom: 20px;
-
-    }
-
-    
-    .detalleProducto__main__articule__caracteristicas--3 {
-    display: flex;
-    }
   
     .detalleProducto__main__articule__puedeInteresar__div__producto {
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
     }
     
-    .detalleProducto__main__articule__puedeInteresar__div__producto--2 {
-        display: inline;
-    }
-
-    .detalleProducto__main__articule__puedeInteresar__div__producto--3 {
-        display: none;
-    }
 }
 
 /* desktop */
@@ -346,10 +296,6 @@ margin-bottom: 3px;
 
     .detalleProducto__main__articule__div__nombre-y-imagen h2 {
         font-size: 30px;
-    }
-    
-    .detalleProducto__main__articule__puedeInteresar__div__producto--3 {
-        display: inline;
     }
 
     .detalleProducto__main__articule__div__pago__precio__precioNormal {

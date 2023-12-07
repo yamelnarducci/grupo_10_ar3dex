@@ -17,14 +17,11 @@
                 <div class="swiper-wrapper">
                   
                   <% products.forEach(product => { %>
+                   
                     <%- include('./partials/product-card',{
                       ...product
                     }) %>
                   <% }) %>
-                  
-                    
-
-                  
                   
                 </div>
                 <div class="swiper-button-next"></div>
@@ -49,7 +46,7 @@
           </article>
           <article class="index__main__section__article--category">
             <img class="index__main__section__article--category--image" src="/images/Category-4.png" />
-            <h4 class="index__main__section__article--category--name">Mascaras</h4>
+            <h4 class="index__main__section__article--category--name">Máscaras</h4>
           </article>
           <article class="index__main__section__article--category">
             <img class="index__main__section__article--category--image" src="/images/Category-5.png" />

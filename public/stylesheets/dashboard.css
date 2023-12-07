@@ -1,10 +1,9 @@
 .dashboard__main div, .dashboard__main li {
     color: var(--colorGris);
-}
+} 
 .dashboard__main--card{
     background: linear-gradient(to top, var(--colorVioleta), black);
 }
-
 .dashboard__main__card--custom-text{
     text-shadow: 0px 0px 2px #FFF;
 }
