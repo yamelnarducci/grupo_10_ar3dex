@@ -16,11 +16,13 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   
-                  <% for( let i = 0; i < 6; i++ ) { %>
-                  
-                    <%- include('./partials/product-card') %>
+                  <% products.forEach(product => { %>
+                   
+                    <%- include('./partials/product-card',{
+                      ...product
+                    }) %>
 
-                  <% } %>
+                  <% }) %>
                   
                 </div>
                 <div class="swiper-button-next"></div>
@@ -33,23 +35,23 @@
         <section class="index__main__section--categories">
           <article class="index__main__section__article--category">
             <img class="index__main__section__article--category--image" src="/images/Category-1.png" />
-            <h4 class="index__main__section__article--category--name">CategoryName</h4>
+            <h4 class="index__main__section__article--category--name">Picadores</h4>
           </article>
           <article class="index__main__section__article--category">
             <img class="index__main__section__article--category--image" src="/images/Category-2.png" />
-            <h4 class="index__main__section__article--category--name">CategoryName</h4>
+            <h4 class="index__main__section__article--category--name">Mates</h4>
           </article>
           <article class="index__main__section__article--category">
             <img class="index__main__section__article--category--image" src="/images/Category-3.png" />
-            <h4 class="index__main__section__article--category--name">CategoryName</h4>
+            <h4 class="index__main__section__article--category--name">Figuras</h4>
           </article>
           <article class="index__main__section__article--category">
             <img class="index__main__section__article--category--image" src="/images/Category-4.png" />
-            <h4 class="index__main__section__article--category--name">CategoryName</h4>
+            <h4 class="index__main__section__article--category--name">Máscaras</h4>
           </article>
           <article class="index__main__section__article--category">
             <img class="index__main__section__article--category--image" src="/images/Category-5.png" />
-            <h4 class="index__main__section__article--category--name">CategoryName</h4>
+            <h4 class="index__main__section__article--category--name">LLAVEROS</h4>
           </article>
         </section>
     </main>
