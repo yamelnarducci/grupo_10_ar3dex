@@ -8,15 +8,19 @@
 
     <main class="detalleProducto__main">
         <article class="detalleProducto__main__articule">
-            <div class="detalleProducto__main__articule__div__nombre-y-imagen">
+            <div class="detalleProducto__main__articule__div__nombre-y-imagen position-relative">
                 <h2><%= name %></h2>
-                <img src="/images/<%= mainImage %>" alt="...">
+                <img src="/images/<%= mainImage %>" alt="..." >
+                
             </div>
             <div class="detalleProducto__main__articule__div__pago">
                 <div class="detalleProducto__main__articule__div__pago__precio">
                     <% if (offer) { %>
-                        <h3 class="detalleProducto__main__articule__div__pago__precio__precioOferta"><%= price * discount / 100 %>USD$</h3>
+                        <h3 class="detalleProducto__main__articule__div__pago__precio__precioOferta"><%= price - (price *  discount / 100) %>USD$</h3>
+                        
+                        
                         <p class="detalleProducto__main__articule__div__pago__precio__precioNormal"><%= price %>USD$</p>
+                        <h3 class=" top-0 end-0 bg-danger bg-gradient rounded-3 text-light fs-2"><%= discount %>%Off</h3>       
                         <% }else{ %>
                             <h3 class="detalleProducto__main__articule__div__pago__precio__precioOferta"><%= price %>USD$</h3>       
                     <% } %>
@@ -24,7 +28,7 @@
                 <hr class="detalleProducto__main__articule__div__precios__lineaSeparadora">
                 <div class="detalleProducto__main__articule__div__precios__cuotas">
                     <p>Hasta 3 cuotas sin interés de </p>
-                    <h2><%= Math.round((price * discount / 100) / 3)  %>USD$</h2>
+                    <h2><%= Math.round((price - (price *  discount / 100)) / 3) %>USD$</h2>
                 </div>
                 <h4 class="detalleProducto__main__articule__variaciones">VARIACIONES</h4>
                 <div class="detalleProducto__main__articule__div__nombre-y-imagen__div__carrusel">
