@@ -26,16 +26,26 @@
                                 <div class="col-12 col-md-6 mb-3">
                                     <div class="form-floating">
                                         <input name="name" type="text" class="form-control bg-dark-subtle" id="name">
-                                        <label for="name" class="body-dark-subtle">Nombre</label>
+                                        <label for="name" >Nombre</label>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-6 mb-3">
+                                
+                                <div class="col-12 col-md-3 mb-3">
                                     <div class="input-group">
                                         <div class="form-floating">
                                             <input name="price" type="text" class="form-control bg-dark-subtle" id="price">
-                                            <label for="price">Precio</label>
+                                            <label for="price" >Precio</label>
                                         </div>
-                                        <span class="input-group-text">$</span>
+                                        <span class="input-group-text">USD$</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3 mb-3">
+                                    <div class="input-group">
+                                        <div class="form-floating">
+                                            <input name="discount" type="text" class="form-control bg-dark-subtle" id="discount">
+                                            <label for="discount">Descuento</label>
+                                        </div>
+                                        <span class="input-group-text">%Off</span>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
@@ -43,15 +53,30 @@
                                         <select name="category" class="form-select  bg-dark-subtle" id="category"
                                             aria-label="Floating label select example">
                                             <option value="" selected hidden></option>
-                                            <option value="picadores">Picadores</option>
-                                            <option value="mates">Mates</option>
-                                            <option value="figuras">Figuras</option>
-                                            <option value="mascaras">Máscaras</option>
-                                            <option value="laveros">Llaveros</option>
+                                            <option value="picador">Picador</option>
+                                            <option value="mate">Mate</option>
+                                            <option value="figura">Figura</option>
+                                            <option value="mascara">Máscara</option>
+                                            <option value="llavero">Llavero</option>
                                         </select>
                                         <label for="category">Categoría</label>
                                     </div>
                                 </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <div class="form-check text-light">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                          En Oferta
+                                        </label>
+                                      </div>
+                                      <div class="form-check text-light">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                          Sin Oferta
+                                        </label>
+                                      </div>
+                                </div>
+                                
                                 <div class="col-12 col-md-3 mb-3">
                                     <input name="mainImage" type="file" class="form-control" id="mainImage" hidden>
                                     <label class="btn btn-lg btn-outline-light w-100" for="mainImage">Imagen

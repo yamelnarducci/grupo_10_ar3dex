@@ -5,10 +5,10 @@
         "price" : 80,
         "mainImage" : "Figura-1.png",
         "images" : ["kurama-1.jpg","kurama-2.jpg","kurama-3.PNG"],
-        "category" : "Figura",
+        "category" : "figura",
         "description" : "Las figuras pintadas las realizamos bajo Pedido. Las fechas de entrega suelen variar según la cola de trabajo. El kit de montaje se suministra sin montar y requiere preparación del modelo (lijado, montaje...) Contacte para un tamaño distinto o si tiene alguna duda. Kurama/Kyuubi es el Mito Uzumaki, Kushina Uzumaki, Minato Namikaze, Black Zetsu, Sora, Ginkaku y Kinkaku, Menma Namikaze y el bijuu de Naruto de la serie Naruto Shippuden, capaz de doblar el fuego y el viento. Tamaño Grande: 21.3cm Alto X 14.6cm Ancho X 15.1cm Fondo",
         "offer" : false,
-        "discount" : 50
+        "discount" : 15
     },
     {
         "id" : 2,
@@ -16,10 +16,10 @@
         "price" : 80,
         "mainImage" : "Figura-2.png",
         "images" : ["luffy-1.jpg","luffy-2.jpg","luffy-3.PNG"],
-        "category" : "Figura",
+        "category" : "figura",
         "description" : "Las figuras pintadas las realizamos bajo Pedido. Las fechas de entrega suelen variar según la cola de trabajo. El kit de montaje se suministra sin montar y requiere preparación del modelo (lijado, montaje...) Contacte para un tamaño distinto o si tiene alguna duda. Luffy es el protagonista de la serie de anime y manga One Piece. Es un pirata valiente y decidido que sueña con convertirse en el Rey de los Piratas y encontrar el tesoro más grande del mundo, el One Piece. 18cm Alto x 19,5cm Ancho PLA",
-        "offer" : false,
-        "discount" : 0
+        "offer" : true,
+        "discount" : 10
     },
     {
         "id" : 3,
@@ -27,7 +27,7 @@
         "price" : 50,
         "mainImage" : "Figura-3.png",
         "images" : ["bulbasaur-1.png","bulbasaur-2.jpg","bulbasaur-3.PNG"],
-        "category" : "Llavero",
+        "category" : "llavero",
         "description" : "Un Bulbasaur salvaje apareció! Pokémon numero 001 de la Region de Kanto. Pókemon Impreso en resina y base en PLA totalmente pintado a mano Descripción del personaje: Bulbasaur es un Pokémon de tipo planta/veneno introducido en la primera generación. Ternurita de 5.7cm Alto x 4cm Ancho PLA",
         "offer" : true,
         "discount" : 50
@@ -39,7 +39,7 @@
         "price" : 50,
         "mainImage" : "Figura-4.png",
         "images" : ["vegeta-1.jpg","vegeta-2.jpg","vegeta-3.jpg"],
-        "category" : "Figura",
+        "category" : "figura",
         "description" : "Las figuras pintadas las realizamos bajo Pedido. Las fechas de entrega suelen variar según la cola de trabajo. El kit de montaje se suministra sin montar y requiere preparación del modelo (lijado, montaje...) Contacte para un tamaño distinto o si tiene alguna duda. Vegeta SSJ de Akira Toriyama, un diseño NO exclusivo de Ar3Dex. Tamaño Grande: 30.7cm Alto X 14.5cm Ancho X 13.3cm Fondo ",
         "offer" : true,
         "discount" : 10
@@ -50,7 +50,7 @@
         "price" : 70,
         "mainImage" : "Figura-5.png",
         "images" : ["naruto-1.jpeg","naruto-2.jpg","naruto-3.jpeg"],
-        "category" : "Figura",
+        "category" : "figura",
         "description" :  "Naruto Uzumaki es el protagonista del manga y anime de Naruto. Es un joven ninja de la Aldea Oculta de la Hoja que tiene el objetivo de convertirse en Hokage, el líder de la aldea y el ninja más fuerte de todos. 25cm Alto x 17cm Ancho PLA",
         "offer" : true,
         "discount" : 25

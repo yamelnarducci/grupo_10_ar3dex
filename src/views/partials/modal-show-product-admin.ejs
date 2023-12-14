@@ -16,10 +16,11 @@
                         <ul class="list-group">
                             
                             
+                          <li class="list-group-item">Item : <b><%= id %></b></li>
                             <li class="list-group-item">Categoria : <b><%= category %></b></li>
+                            <li class="list-group-item">Precio : <b><%= price %> USD$</b></li>
+                            <li class="list-group-item">Descuento : <b><%= offer ? discount + "% de descuento" : "Sin descuento" %></b></li>
                             <li class="list-group-item">Descripción : <b><%= description %></b></li>
-                            <li class="list-group-item">Precio : <b><%= price %></b></li>
-                            <li class="list-group-item">Item : <b><%= id %></b></li>
                           </ul>
                         
                         
