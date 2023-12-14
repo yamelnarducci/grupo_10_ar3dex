@@ -14,13 +14,17 @@
             </div>
             <div class="detalleProducto__main__articule__div__pago">
                 <div class="detalleProducto__main__articule__div__pago__precio">
-                    <p class="detalleProducto__main__articule__div__pago__precio__precioNormal"><%= price %>USD$</p>
-                    <h3 class="detalleProducto__main__articule__div__pago__precio__precioOferta"><%= price * 0.75 %>USD$</h3>
+                    <% if (offer) { %>
+                        <h3 class="detalleProducto__main__articule__div__pago__precio__precioOferta"><%= price * discount / 100 %>USD$</h3>
+                        <p class="detalleProducto__main__articule__div__pago__precio__precioNormal"><%= price %>USD$</p>
+                        <% }else{ %>
+                            <h3 class="detalleProducto__main__articule__div__pago__precio__precioOferta"><%= price %>USD$</h3>       
+                    <% } %>
                 </div>
                 <hr class="detalleProducto__main__articule__div__precios__lineaSeparadora">
                 <div class="detalleProducto__main__articule__div__precios__cuotas">
                     <p>Hasta 3 cuotas sin interés de </p>
-                    <h2><%= Math.round((price * 0.75) / 3)  %>USD$</h2>
+                    <h2><%= Math.round((price * discount / 100) / 3)  %>USD$</h2>
                 </div>
                 <h4 class="detalleProducto__main__articule__variaciones">VARIACIONES</h4>
                 <div class="detalleProducto__main__articule__div__nombre-y-imagen__div__carrusel">
@@ -58,11 +62,14 @@
             </div>
             <div class="detalleProducto__main__articule__puedeInteresar__div__producto">
                 <div class=" mt-4 d-flex flex-column flex-md-row">
-                    <% productosRelacionados.forEach(({id,mainImage,name})=> { %>
+                    <% productosRelacionados.forEach(({id,mainImage,name,offer,price,discount})=> { %>
                         <%- include('../partials/relacionados',{ 
                             id,
                             mainImage,
-                            name, 
+                            name,
+                            offer,
+                            price,
+                            discount
                         })%>
                         <% }) %>
                     </div>

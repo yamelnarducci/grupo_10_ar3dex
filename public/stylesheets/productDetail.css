@@ -65,6 +65,7 @@ justify-content: space-between;
 align-items: center;
 margin-top: 10px;
 margin-bottom: 3px;
+flex-direction: row-reverse;
 }
 
 .detalleProducto__main__articule__div__pago__precio__precioNormal {

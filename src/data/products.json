@@ -2,46 +2,57 @@
     {
         "id" : 1,
         "name" : "Kurama",
-        "price" : 250,
+        "price" : 80,
         "mainImage" : "Figura-1.png",
         "images" : ["kurama-1.jpg","kurama-2.jpg","kurama-3.PNG"],
         "category" : "Figura",
-        "description" : " Naruto/ 21cm x 14cm PLA"
+        "description" : " Naruto/ 21cm x 14cm PLA",
+        "offer" : false,
+        "discount" : 50
     },
     {
         "id" : 2,
         "name" : "Luffy",
-        "price" : 350,
+        "price" : 80,
         "mainImage" : "Figura-2.png",
         "images" : ["luffy-1.jpg","luffy-2.jpg","luffy-3.PNG"],
         "category" : "Figura",
-        "description" : "One piece/ figura colgante 18cm x 19,5cm PLA"
+        "description" : "One piece/ figura colgante 18cm x 19,5cm PLA",
+        "offer" : false,
+        "discount" : 0
     },
     {
         "id" : 3,
         "name" : "Bulbasaur",
-        "price" : 470,
+        "price" : 50,
         "mainImage" : "Figura-3.png",
         "images" : ["bulbasaur-1.png","bulbasaur-2.jpg","bulbasaur-3.PNG"],
         "category" : "Llavero",
-        "description" : "Pokemon/ ternurita de 5.7cm x 4cm PLA"
+        "description" : "Pokemon/ ternurita de 5.7cm x 4cm PLA",
+        "offer" : true,
+        "discount" : 50
+        
     },
     {
         "id" : 4,
         "name" : "Vegeta",
-        "price" : 500,
+        "price" : 50,
         "mainImage" : "Figura-4.png",
         "images" : ["vegeta-1.jpg","vegeta-2.jpg","vegeta-3.jpg"],
         "category" : "Figura",
-        "description" : "Dragonball Z/ 34cm x 24cm PLA "
+        "description" : "Dragonball Z/ 34cm x 24cm PLA ",
+        "offer" : true,
+        "discount" : 10
     },
     {
         "id" : 5,
         "name" : "Naruto",
-        "price" : 300,
+        "price" : 70,
         "mainImage" : "Figura-5.png",
         "images" : ["naruto-1.jpeg","naruto-2.jpg","naruto-3.jpeg"],
         "category" : "Figura",
-        "description" :  "Naruto/ 25cm x 17cm PLA"
+        "description" :  "Naruto/ 25cm x 17cm PLA",
+        "offer" : true,
+        "discount" : 25
     }
 ]
