@@ -10,7 +10,7 @@ router
     .get('/agregar', add)
     .post('/crear', upload.fields([{name:"mainImage"},{name:"images"}]), create)
     .get('/editar/:id', edit)
-    .put('/actualizar/:id', update)
+    .put('/actualizar/:id', upload.fields([{name:"mainImage"},{name:"images"}]), update)
 
 
 module.exports = router;

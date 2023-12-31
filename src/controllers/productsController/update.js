@@ -5,14 +5,16 @@ module.exports = (req, res) => {
 
     const { id } = req.params
 
+    const {mainImage, images} = req.files;
+
     const products = leerJSON('products');
 
     const productsUpdated = products.map(product => {
         if (product.id == id) {
             product.name = name.trim();
             product.price = price;
-            product.mainImage = null;
-            product.images = [];
+            product.mainImage = mainImage ? mainImage[0].filename : null;
+            product.images = images ? images.map((image) => image.filename) : [];
             product.category = category;
             product.description = description.trim();
             product.offer = offer;

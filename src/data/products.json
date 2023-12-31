@@ -73,5 +73,20 @@
       "description": "Naruto Uzumaki es el protagonista del manga y anime de Naruto. Es un joven ninja de la Aldea Oculta de la Hoja que tiene el objetivo de convertirse en Hokage, el líder de la aldea y el ninja más fuerte de todos. 25cm Alto x 17cm Ancho PLA",
       "offer": true,
       "discount": 25
+   },
+   {
+      "id": "3a835a5e-f924-438f-b4ec-aa6664ff5aaf",
+      "name": "otro a eliminar 2",
+      "price": "2000",
+      "mainImage": "1704043178946_5648346e1510587a3fcf30720954779f.jpg",
+      "images": [
+         "1704043178954_Cartero.webp",
+         "1704043178955_Goku repartidor.png",
+         "1704043179064_POKEBALL.png"
+      ],
+      "category": "figura",
+      "description": "222222222222222222222 2222222 22222",
+      "offer": "true",
+      "discount": "25"
    }
 ]
