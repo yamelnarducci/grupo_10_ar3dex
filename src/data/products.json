@@ -75,14 +75,25 @@
       "discount": 25
    },
    {
-      "id": "2edb7f32-d195-462b-ad73-2a5cf5eae813",
-      "name": "Pikachu modificado",
-      "price": "200",
-      "mainImage": null,
+      "id": "86d20a5c-f57a-43f1-8a93-23d4c3803546",
+      "name": "Zapatillas Rebook",
+      "price": "5000",
+      "mainImage": "3D-img_vegeta_-removebg-preview.png1703979105163.png",
       "images": [],
       "category": "figura",
-      "description": "Un Pikachu salvaje apareció!\r\nPokémon numero 025 de la Region de Kanto.\r\n\r\nDiseño exclusivo de Kiba studio + Pókemon\r\n\r\nImpreso en resina y base en PLA totalmente pintado a mano\r\n\r\nDescripción del personaje:\r\n\r\nPikachu es un Pokémon de tipo eléctrico introducido en la primera generación.",
+      "description": "afasffasasfas af asfasfasfasf asfas f",
       "offer": "true",
-      "discount": "50"
+      "discount": "5"
+   },
+   {
+      "id": "1c23cf0e-9c9e-4b39-9efc-cd2c36c2e553",
+      "name": "Producto sin imagen",
+      "price": "1000 ",
+      "mainImage": null,
+      "images": [],
+      "category": "llavero",
+      "description": "asdwasdwasd was dwa sdwa sdwa",
+      "offer": "false",
+      "discount": "10"
    }
 ]

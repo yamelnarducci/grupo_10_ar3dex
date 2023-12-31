@@ -6,7 +6,7 @@ module.exports = (req,res) => {
 
     const products = leerJSON('products');
 
-    const product = products.find(product => product.id === +id)
+    const product = products.find(product => product.id == id)
 
     const productosRelacionados = products.filter(item => item.category === product.category)
 

@@ -1,10 +1,10 @@
 const crypto = require('crypto')
 
-function Product(name="", price, category, description, offer, discount) {
+function Product(name, price, category, description, offer, discount, mainImage) {
     this.id = crypto.randomUUID();
     this.name = name.trim();
     this.price = price;
-    this.mainImage = null;
+    this.mainImage = mainImage ? mainImage.filename : null;
     this.images = [];
     this.category = category;
     this.description = description.trim();
