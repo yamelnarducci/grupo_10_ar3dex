@@ -2,7 +2,7 @@ const { leerJSON, escribirJSON } = require("../../data");
 
 module.exports = (req,res) => {
 
-    const {name, address,url_map, description, category} = req.body;
+    const {name,price,mainImage, images, category,description, offer, discount} = req.body;
 
     const {id} = req.params
 
@@ -11,12 +11,14 @@ module.exports = (req,res) => {
     const produtsUpdated = products.map(product => {
         if(product.id == id){
             product.name = name.trim();
-            product.description = description.trim();
-            product.address = address.trim();
-            product.url_map = url_map.trim();
+            product.price = price.trim();
             product.mainImage = "img-pdto-1.jpg";
             product.images = [];
             product.category = category;
+            product.description = description.trim();
+            product.offer = offer.trim();
+            product.discount = discount.trim();
+            
         }
         return product
     })
