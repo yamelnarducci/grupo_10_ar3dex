@@ -8,6 +8,7 @@ router
   .get('/', index)
   .get('/carrito', cart)
   .get('/admin', admin)
+  
 
 module.exports = router;
 
