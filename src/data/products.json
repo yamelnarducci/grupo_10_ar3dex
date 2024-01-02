@@ -199,20 +199,5 @@
       "description": "michiverse",
       "offer": null,
       "discount": ""
-   },
-   {
-      "id": "20b57190-07bc-4602-9642-f799cb617717",
-      "name": "Zapatillas Rebook",
-      "price": "1000",
-      "mainImage": "1704208627988_POKEBALL copia.jpg",
-      "images": [
-         "1704208627988_POKEBALL copia.jpg",
-         "1704208627992_POKEBALL.png",
-         "1704208628001_POKEBALL.webp"
-      ],
-      "category": "mate",
-      "description": "asdasdasd asdas ddas d",
-      "offer": "true",
-      "discount": "55"
    }
 ]
