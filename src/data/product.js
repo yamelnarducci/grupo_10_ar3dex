@@ -5,12 +5,12 @@ function Product(name,price,mainImage, images, category,description, offer, disc
     this.id =  crypto.randomUUID();
     this.name = name.trim();
     this.price = price.trim();
-    this.mainImage = "img-pdto-1.jpg";
-    this.images = [];
+    this.mainImage = mainImage ? mainImage[0].filename : null;
+    this.images = images ? images.map((image) => image.filename) : [];
     this.category = category;
     this.description = description.trim();
     this.offer = offer || null;
-    this.discount = discount.trim();
+    this.discount = discount;
     
     
 
