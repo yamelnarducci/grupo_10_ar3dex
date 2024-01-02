@@ -47,9 +47,9 @@
 * Tenemos que dejár de procastinar las tareas y empezar a trabajar desde el primer momento.
 
 
-# Sprint 4
+# Sprint 3
 
-# Conclusiones de la retro del cuarto sprint
+# Conclusiones de la retro del tercer sprint
 
 ## Lo que consideramos que hicimos bien:
 
@@ -57,13 +57,16 @@
 
 ## Lo que consideramos que hicimos mal:
 
+* No hubo comunicación, lo que desencadeno en varios malentendidos.
 * No hubo dailis, por lo que ninguno de los integrante del grupo era consciente del progreso del resto.
 * Reuniones muy largas, aún en el cuarto sprint nuestras reuniones no duran menos de dos horas.
 
 ## Lo que consideramos que deberíamos empezar a hacer:
 
 * Deberiamos reunirnos más seguido para poder conoser los avances del resto de integrantes y poder brindar algun tipo de ayuda para efiscientizar el proceso y poder brindarnos ayuda en las dificultades.
+* Comunicar los avances de cada uno por más minimos que sean  
 
 ## Lo que consideramos que deberíamos dejar de hacer:
 
 * Deberiamos dejar de hacer reuniones tan largas, como lo epecificaron los cordinadores.
+
