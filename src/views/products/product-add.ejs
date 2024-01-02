@@ -5,7 +5,7 @@
 
 
     <body>
-
+        <%- include('../partials/header-admin') %>
         <main class="container dashboard__main">
             <section class="row my-5">
                 <div class="col-12 col-md-10 mx-auto">
@@ -20,7 +20,7 @@
                             </nav>
                         </div>
                         <div class="card-body">
-                            <form action="" class="row">
+                            <form action="/productos/crear" class="row" method="POST" enctype="multipart/form-data">
                                 <h3 class="dashboard__main__card--custom-text">Nuevo Producto</h3>
                                 <hr>
                                 <div class="col-12 col-md-6 mb-3">
@@ -64,14 +64,14 @@
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
                                     <div class="form-check text-light">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                        <label class="form-check-label" for="flexRadioDefault1">
+                                        <input class="form-check-input" value="true" type="radio" name="offer" id="offer">
+                                        <label class="form-check-label" for="offer">
                                           En Oferta
                                         </label>
                                       </div>
                                       <div class="form-check text-light">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                        <label class="form-check-label" for="flexRadioDefault2">
+                                        <input class="form-check-input" value="false" type="radio" name="offer" id="offer" checked>
+                                        <label class="form-check-label" for="offer">
                                           Sin Oferta
                                         </label>
                                       </div>
@@ -95,7 +95,7 @@
                                 </div>
 
                                 <div class="col-12 d-flex justify-content-end">
-                                    <button class="btn btn-lg btn-dark btn-outline-light ">Agregar producto</button>
+                                    <button type="submit" class="btn btn-lg btn-dark btn-outline-light ">Agregar producto</button>
                                 </div>
                             </form>
 

@@ -7,7 +7,7 @@
 
 
 <body>
-    
+    <%- include('../partials/header-admin') %>
     <main class="container dashboard__main">
         <section class="row my-5" >
             <div class="col-12 col-md-10 mx-auto">
@@ -16,12 +16,12 @@
                         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                             <ol class="breadcrumb">
                               <li class="breadcrumb-item"><a href="/admin" class="text-primary">Admin</a></li>
-                              <li class="breadcrumb-item active text-secondary" aria-current="page">Editar producto</li>
+                              <li class="breadcrumb-item active text-secondary" aria-current="page">Editando <%= name %></li>
                             </ol>
                           </nav>
                     </div>
                     <div class="card-body">
-                        <form action="" class="row">
+                        <form action="/productos/actualizar/<%= id %>?_method=PUT" class="row" method="POST" enctype="multipart/form-data">
                             <h3 class="dashboard__main__card--custom-text">Editar Producto</h3>
                             <hr>
                             <div class="col-12 col-md-6 mb-3">
@@ -62,18 +62,18 @@
                             </div>
                             <div class="col-12 col-md-6 mb-3">
                                 <div class="form-check text-light">
-                                    <input class="form-check-input" type="radio" name="offer" id="offerTrue" <% if (offer) { %>
+                                    <input class="form-check-input" value="true" type="radio" name="offer" id="offer" <% if (offer) { %>
                                      checked
                                     <% } %> >
-                                    <label class="form-check-label" for="offerTrue">
+                                    <label class="form-check-label" for="offer">
                                       En Oferta
                                     </label>
                                   </div>
                                   <div class="form-check text-light">
-                                    <input class="form-check-input" type="radio" name="offer" id="offerFalse"<% if (!offer) { %>
+                                    <input class="form-check-input" value="false" type="radio" name="offer" id="offer"<% if (!offer) { %>
                                         checked
                                        <% } %> >
-                                    <label class="form-check-label" for="offerFalse">
+                                    <label class="form-check-label" for="offer">
                                       Sin Oferta
                                     </label>
                                   </div>
@@ -90,7 +90,7 @@
                             <div class="col-12 mb-3">
                                 <div class="form-floating">
                                     <textarea name="description" class="form-control bg-dark-subtle" id="description" style="height: 200px;"><%= description %></textarea>
-                                    <label for="description">Agrega una descripción</label>
+                                    <label for="description">Modifica la descripción</label>
                                   </div>
                             </div>
                            

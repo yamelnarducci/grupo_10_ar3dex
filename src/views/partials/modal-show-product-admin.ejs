@@ -1,5 +1,5 @@
 <!-- Modal -->
-<div class="modal fade" id="exampleModal<%= id %>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="showModalProduct<%= id %>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered ">
       <div class="modal-content">
         <div class="modal-header">
@@ -11,7 +11,7 @@
         <div class="modal-body">
             <div class="row">
                 <div class="col-12 col-md-lg-4">
-                    <img src="/images/<%= mainImage %>" class="img-fluid" alt="">
+                    <img src="/images/products/<%= mainImage || 'default-image.webp' %>" class="img-fluid" alt="">
                     <div class="col-12 col-md-lg-8">
                         <ul class="list-group">
                             
