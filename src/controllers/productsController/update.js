@@ -1,32 +1,29 @@
-const { leerJSON, escribirJSON } = require("../../data");
+const { leerJSON, escribirJSON } = require('../../data')
 
-module.exports = (req,res) => {
+module.exports = (req, res) => {
+    const { name, price, category, description, offer, discount } = req.body;
 
-    const {name,price,mainImage, images, category,description, offer, discount} = req.body;
+    const { id } = req.params
 
-    const {id} = req.params
+    const {mainImage, images} = req.files;
 
     const products = leerJSON('products');
 
-    const produtsUpdated = products.map(product => {
-        if(product.id == id){
+    const productsUpdated = products.map(product => {
+        if (product.id == id) {
             product.name = name.trim();
-            product.price = price.trim();
-            product.mainImage = "img-pdto-1.jpg";
-            product.images = [];
+            product.price = price;
+            product.mainImage = mainImage ? mainImage[0].filename : null;
+            product.images = images ? images.map((image) => image.filename) : [];
             product.category = category;
             product.description = description.trim();
-            product.offer = offer.trim();
-            product.discount = discount.trim();
-            
+            product.offer = offer;
+            product.discount = discount;
         }
         return product
     })
 
-    escribirJSON(produtsUpdated, 'products')
-    
+    escribirJSON(productsUpdated, 'products')
 
     return res.redirect('/admin')
-
-
 }

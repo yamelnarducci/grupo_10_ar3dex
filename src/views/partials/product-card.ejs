@@ -1,6 +1,6 @@
 <article class="swiper-slide index__main__section__article--carousel">
     <a href="/productos/detalle/<%= id %>">
-      <img class="index__main__section__article--carousel--product-img" src="/images/<%= mainImage %>">
+      <img class="index__main__section__article--carousel--product-img" src="/images/products/<%= mainImage || 'default-image.webp' %>">
       <img class="index__main__section__article--carousel--box-img" src="/images/Article-Frame.png" />
       <% if (offer) { %>
         <h3 class="position-absolute top-0 start-0 translate-middle bg-danger bg-gradient rounded-1"><%= discount %>%Off</h3>       

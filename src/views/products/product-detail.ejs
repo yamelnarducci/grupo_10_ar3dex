@@ -10,7 +10,7 @@
         <article class="detalleProducto__main__articule">
             <div class="detalleProducto__main__articule__div__nombre-y-imagen position-relative">
                 <h2><%= name %></h2>
-                <img src="/images/<%= mainImage %>" alt="..." >
+                <img src="/images/products/<%= mainImage || 'default-image.webp' %>" alt="..." >
                 
             </div>
             <div class="detalleProducto__main__articule__div__pago">
@@ -32,9 +32,9 @@
                 </div>
                 <h4 class="detalleProducto__main__articule__variaciones">VARIACIONES</h4>
                 <div class="detalleProducto__main__articule__div__nombre-y-imagen__div__carrusel">
-                    <img src="/images/<%= typeof images[0] === "undefined" ? mainImage : images[0]  %>"alt="...">
-                    <img src="/images/<%= typeof images[1] === "undefined" ? mainImage : images[1]  %>" alt="...">
-                    <img src="/images/<%= typeof images[2] === "undefined" ? mainImage : images[2]  %>" alt="...">
+                    <img src="/images/products/<%= (typeof images[0] === "undefined" ? mainImage : images[0]) || 'default-image.webp'  %>"alt="...">
+                    <img src="/images/products/<%= (typeof images[1] === "undefined" ? mainImage : images[1]) || 'default-image.webp' %>" alt="...">
+                    <img src="/images/products/<%= (typeof images[2] === "undefined" ? mainImage : images[2]) || 'default-image.webp' %>" alt="...">
                 </div>
                 <a href="/carrito">
                 <button class="detalleProducto__main__articule__div__precios__btnAgregarCarrito">
@@ -50,7 +50,7 @@
             </div>
             <div class="detalleProducto__main__articule__caracteristicas__div__detalles">
                 <div class="detalleProducto__main__articule__caracteristicas__div__detalles__imagen">
-                    <img src="/images/<%= typeof images[0] === "undefined" ? mainImage : images[0] %>" alt="...">
+                    <img src="/images/products/<%= (typeof images[0] === "undefined" ? mainImage : images[0]) || 'default-image.webp' %>" alt="...">
                 </div>
                 <div class="detalleProducto__main__articule__caracteristicas__div__detalles__material">
                     <h3>DETALLES</h3>
