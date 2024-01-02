@@ -2,16 +2,16 @@ const { leerJSON, escribirJSON } = require("../../data");
 const User = require("../../data/user");
 
 module.exports = (req,res) => {
+    const userImage = req.file.userImage;
     const {name, surname, email, password, userCategory} = req.body;
 
-    const userImage = req.file.userImage;
 
-    const newUser = new User(name, surname, email, password, userCategory, userImage);
-    const products = leerJSON('users');
+    const newUser = new User(name, surname, email, password, userImage, userCategory);
+    const users = leerJSON('users');
 
-    products.push(newUser);
+    users.push(newUser);
 
-    escribirJSON(products, 'users')
+    escribirJSON(users, 'users')
 
     return res.redirect('/')
 }

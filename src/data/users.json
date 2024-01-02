@@ -1,9 +1,20 @@
 [
    {
-      "id": "97737fce-94b8-4143-a5ac-1e183d7dca95",
+      "id": "eb080ea8-b2d0-493b-883a-cc7948712b99",
+      "name": "asdasd",
+      "surname": "asdasdasd",
+      "email": "kevinalex.espinola09@gmail.com",
+      "password": "123123",
+      "userCategory": "solo comprar",
+      "userImage": null
+   },
+   {
+      "id": "514d7a52-6a07-454a-97f4-751aecbfe0c7",
       "name": "kevin",
       "surname": "espinola",
       "email": "kevinalex.espinola09@gmail.com",
-      "password": "12341234"
+      "password": "123123",
+      "userImage": null,
+      "userCategory": "solo comprar"
    }
 ]

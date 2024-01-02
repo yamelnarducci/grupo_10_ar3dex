@@ -8,7 +8,6 @@ function User(name, surname, email, password, userImage, userCategory) {
     this.password = password.trim();
     this.userImage = userImage ? userImage.filename : null;
     this.userCategory = userCategory;
-
 }
 
 module.exports = User
