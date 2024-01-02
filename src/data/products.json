@@ -199,5 +199,20 @@
       "description": "michiverse",
       "offer": null,
       "discount": ""
+   },
+   {
+      "id": "80e6e086-9934-4ccc-8bba-1b278bb8b2f0",
+      "name": "asdfa",
+      "price": "5000",
+      "mainImage": "1704213109098_3D-img_vegeta_-removebg-preview.png",
+      "images": [
+         "1704213109101_3D-img_vegeta_-removebg-preview.png",
+         "1704213109103_3D-img-removebg-preview - copia.png",
+         "1704213109106_3D-img-removebg-preview.png"
+      ],
+      "category": "mate",
+      "description": "asdasd asdas",
+      "offer": "true",
+      "discount": "5"
    }
 ]
