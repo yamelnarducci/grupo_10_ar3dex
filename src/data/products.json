@@ -136,13 +136,13 @@
    },
    {
       "id": 10,
-      "name": "",
-      "price": "",
+      "name": "Groot",
+      "price": "6",
       "mainImage": "img-pdto-1.jpg",
       "images": [],
-      "category": "",
-      "description": "",
-      "offer": null,
+      "category": "mate",
+      "description": "pintado a mano y barnizado",
+      "offer": "on",
       "discount": ""
    },
    {
