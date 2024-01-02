@@ -37,9 +37,11 @@
                                             <td><%= category %></td>
                                             <td>
                                                 <div class="d-flex gap-2">
-                                                    <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal<%= id %>"><i class="fa-solid fa-eye"></i></button>
+                                                    <button type="submit" class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#showModalProduct<%= id %>"><i class="fa-solid fa-eye"></i></button>
                                                     <a class="btn btn-sm btn-outline-success" href="/productos/editar/<%= id %>"><i class="fa-solid fa-pencil"></i></a>
-                                                    <a class="btn btn-sm btn-outline-danger" href="/productos/eliminar/<%= id %>"><i class="fa-solid fa-trash"></i></a>
+                                                    <button type="submit" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#warningRemoveModal<%= id %>"><i class="fa-solid fa-trash"></i></button>
+
+
                                                     <%- include('./partials/modal-show-product-admin',{
                                                         id,
                                                         name,
@@ -49,6 +51,12 @@
                                                         description,
                                                         offer,
                                                         discount
+                                                    }) %>
+
+                                                    <%- include('./partials/modal-warning-delete-product-admin',{
+                                                        id,
+                                                        name,
+
                                                     }) %>
                                                 </div>
                                             </td>

@@ -1,4 +1,8 @@
+
 const express = require('express');
+const { detail, add, edit, create, update, remove } = require('../controllers/productsController');
+const upload = require('../middlewares/upload');
+
 const router = express.Router();
 const { detail, add, edit, create, update } = require('../controllers/productsController');
 const upload = require('../middlewares/upload');
