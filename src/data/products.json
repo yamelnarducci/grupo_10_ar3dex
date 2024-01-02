@@ -188,5 +188,16 @@
       "description": "Estatuilla",
       "offer": "on",
       "discount": ""
+   },
+   {
+      "id": "20e3273d-3b01-4885-9cac-37ba5b0e3280",
+      "name": "Michilín abum miajaut",
+      "price": "1999",
+      "mainImage": "img-pdto-1.jpg",
+      "images": [],
+      "category": "figura",
+      "description": "michiverse",
+      "offer": null,
+      "discount": ""
    }
 ]
