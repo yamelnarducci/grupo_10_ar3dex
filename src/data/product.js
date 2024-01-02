@@ -9,7 +9,7 @@ function Product(name,price,mainImage, images, category,description, offer, disc
     this.images = images ? images.map((image) => image.filename) : [];
     this.category = category;
     this.description = description.trim();
-    this.offer = offer || null;
+    this.offer = offer;
     this.discount = discount;
     
     
