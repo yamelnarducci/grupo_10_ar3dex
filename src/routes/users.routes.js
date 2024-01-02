@@ -1,10 +1,12 @@
 const express = require('express');
-const { login, register } = require('../controllers/usersController');
 const router = express.Router();
+const { login, register, createUser } = require('../controllers/usersController');
+const userUpload = require('../middlewares/userUpload');
 
-/* GET users listing. */
+/* Usuarios */
 router
     .get('/ingreso', login )
+    .post('/crearUsuario', userUpload.single('userImage'), createUser)
     .get('/registro', register)
 
 module.exports = router;
