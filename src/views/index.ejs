@@ -30,6 +30,21 @@
               </div>
               </div>
         </section>
+
+        <div class="container products-wrapper">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="products-title">Ofertas</h2>
+            </div>
+        <% products.filter(product => product.offer === "true").forEach(product => { %>
+          <%- include('./partials/cardProduct',{product}) %>
+        <% }) %>
+      </div>
+    </div>
+
+
+
+
         <!-- Categorías destacadas -->
         <section class="index__main__section--categories">
           <article class="index__main__section__article--category">

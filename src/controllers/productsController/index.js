@@ -15,5 +15,6 @@ module.exports = {
     edit,
     update,
     search,
-    remove
+    remove,
+
 }
