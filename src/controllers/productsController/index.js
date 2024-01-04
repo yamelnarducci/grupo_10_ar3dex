@@ -5,6 +5,7 @@ const search = require('./search');
 const create = require('./create');
 const remove = require('./remove');
 const update = require('./update');
+const colection = require('./colection');
 
 
 
@@ -16,5 +17,6 @@ module.exports = {
     update,
     search,
     remove,
+    colection,
 
 }

@@ -1,8 +1,9 @@
 
 const express = require('express');
 const router = express.Router();
-const { detail, add, edit, create, update, remove } = require('../controllers/productsController');
+const { detail, add, edit, create, update, remove, colection } = require('../controllers/productsController');
 const upload = require('../middlewares/upload');
+
 
 /* /productos */
 
@@ -13,6 +14,7 @@ router
     .get('/editar/:id', edit)
     .put('/actualizar/:id', upload.fields([{name:"mainImage"},{name:"images"}]), update)
     .delete('/eliminar/:id',remove)
+    .get('/coleccion', colection)
 
 
 module.exports = router;
