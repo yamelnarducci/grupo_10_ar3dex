@@ -48,12 +48,17 @@ body {
   display: none;
 }
 .search-bar i {
-  margin-left: 10px;
-  margin-right: 5px;
+  margin-inline: 10px;
 }
-.search-bar a {
-  color: var(--colorGris);
+.search-bar button {
+  background: linear-gradient(
+    -180deg,
+    rgba(0, 0, 0, 1) 8%,
+    rgba(128, 30, 106, 1) 100%
+  );
+  
 }
+
 /* header-admin */
 .navbar-custom {
   background: linear-gradient(to right, rgb(26, 1, 39), #f217fd);
@@ -97,6 +102,15 @@ body {
   }
   .search-bar {
     display: flex;
+  }
+  .search-bar-input {
+    background: linear-gradient(
+    -180deg,
+    rgb(207, 207, 207) 15%,
+    rgb(180, 180, 180) 60%,
+    rgb(125, 125, 125) 100%
+  );
+    text-shadow: 1px 1px 1px rgb(51, 51, 51);
     
   }
   .carrito {
@@ -142,6 +156,7 @@ body {
     height: 30px;
     margin-bottom: 40px;
     max-height: 45px;
+    
   }
   .carrito {
     display: block;

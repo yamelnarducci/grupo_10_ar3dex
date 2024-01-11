@@ -33,16 +33,16 @@
         </div>
       </ul>
     </nav>
-    <div class="search-bar">
+    <form class="search-bar" action="/productos/buscar" method="GET">
       <input
         class="search-bar-input"
-        type="text"
+        type="search"
         placeholder="Buscar productos..."
-      /><i
-        class="fa-solid fa-magnifying-glass"
-        id="lupita"
-        style="color: #969696"
-      ></i>
-    </div>
+        name="keyword"
+      />
+      <button type="submit" id="lupita">
+        <i class="fa-solid fa-magnifying-glass"  style="color: #969696"></i>
+      </button>
+    </form>
   </div>
 </header>
