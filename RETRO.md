@@ -70,3 +70,25 @@
 
 * Deberiamos dejar de hacer reuniones tan largas, como lo epecificaron los cordinadores.
 
+
+# Sprint 4
+
+# Conclusiones de la retro del cuarto sprint
+
+## Lo que consideramos que hicimos bien:
+
+* Dividimos las tareas mitad y mitad, comenzamos a trabajar rapido y nos permitió tener tiempo de sobra para corregir errores.
+
+## Lo que consideramos que hicimos mal:
+
+* No hicimos daily's
+* Faltó comunicación.
+
+## Lo que consideramos que deberíamos empezar a hacer:
+
+* Comunicarnos más, posiblemente volver a usar discord. Funcionaba muy bien con el resto del equipo o con los trabajos practicos grupales.
+* Empatizar más con el otro.
+
+## Lo que consideramos que deberíamos dejar de hacer:
+
+* Individualizar, trabajar siempre solos.
