@@ -25,6 +25,21 @@
                 <small class="text-danger"><%= (locals.errors &&  errors.surname) && errors.surname.msg %></small>
             </div>
             <div class="form__box">
+                <label class="form__label" for="province">Provincia</label>
+                <input class="form__input" id="province" type="text" placeholder="Escribí tu Provincia" name="province" value="<%= locals.old && old.province %>">
+                <small class="text-danger"><%= (locals.errors &&  errors.province) && errors.province.msg %></small>
+            </div>
+            <div class="form__box">
+                <label class="form__label" for="city">Ciudad</label>
+                <input class="form__input" id="city" type="text" placeholder="Escribí tu ciudad" name="city" value="<%= locals.old && old.city %>">
+                <small class="text-danger"><%= (locals.errors &&  errors.city) && errors.city.msg %></small>
+            </div>
+            <div class="form__box">
+                <label class="form__label" for="adress">Dirección</label>
+                <input class="form__input" id="adress" type="text" placeholder="Escribí tu dirección" name="adress" value="<%= locals.old && old.adress %>">
+                <small class="text-danger"><%= (locals.errors &&  errors.adress) && errors.adress.msg %></small>
+            </div>
+            <div class="form__box">
                 <label class="form__label" for="email">Email</label>
                 <input class="form__input" id="email" type="email" placeholder="correo@correo.com" name="email" value="<%= locals.old && old.email %>">
                 <small class="text-danger"><%= (locals.errors &&  errors.email) && errors.email.msg %></small>
