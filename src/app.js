@@ -10,7 +10,8 @@ const session = require('express-session');
 const indexRouter = require('./routes/index.routes');
 const usersRouter = require('./routes/users.routes');
 const productsRouter = require('./routes/products.routes');
-const checkUserLogin = require('./middlewares/checkUserLogin');
+
+const transferLocals = require('./middlewares/transferLocals');
 
 const app = express();
 
@@ -38,7 +39,7 @@ app
     secret : 'Ar3dex forever!!!'
   }))
 
-  .use(checkUserLogin)
+  .use(transferLocals)
 
 
   /*rutas*/

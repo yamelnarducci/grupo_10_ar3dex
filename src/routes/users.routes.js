@@ -1,6 +1,6 @@
 const express = require('express');
 
-const { login, register, processRegister, processLogin, logout } = require('../controllers/usersController');
+const { login, register, processRegister, processLogin, logout, profile } = require('../controllers/usersController');
 const userUpload = require('../middlewares/userUpload');
 const userRegisterValidator = require('../../validations/user-register-validator');
 const userLoginValidator = require('../../validations/user-login-validator');
@@ -13,6 +13,7 @@ router
     .get('/registro', register)
     .post('/ingreso',userLoginValidator,processLogin)
     .get('/salir',logout)
+    .get('/perfil',profile)
 
 
 module.exports = router;

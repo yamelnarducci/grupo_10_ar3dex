@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ES">
+<%- include('../partials/head',{ title : 'Perfil' }) %>
+
+  <body>
+    <main class="d-flex flex-column justify-content-between" style="height: 100vh">
+      <%- include('../partials/header') %>
+
+        <section class="row">
+          <div class="col-12 col-md-10 col-lg-6 mx-auto my-5">
+            <div class="card shadow">
+              <div class="card-header">
+                <h3 class="box__card--title">Perfil de usuario</h3>
+              </div>
+              <div class="card-body">
+                <form action="" class="row " method="POST">
+                  <div class="col-12 col-md-6 mb-3" >
+                    <label for="name" class="form__label">Nombre</label>
+                    <input type="text" name="name"
+                      class="form-control <%= locals.errors && errors.name ? 'is-invalid' : null %>" id="name"
+                      value="<%= locals.old && old.name ? old.name : null %>" />
+                    <small class="text-danger ms-2">
+                      <%= locals.errors && errors.name ? errors.name.msg : null %>
+                    </small>
+                  </div>
+                  <div class="col-12 col-md-6 mb-3">
+                    <label for="surname" class="form__label">Apellido</label>
+                    <input type="text" name="surname"
+                      class="form-control <%= locals.errors && errors.surname ? 'is-invalid' : null %>" id="surname"
+                      value="<%= locals.old && old.surname ? old.surname : null %>" />
+                    <small class="text-danger ms-2">
+                      <%= locals.errors && errors.surname ? errors.surname.msg : null %>
+                    </small>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form__label">Correo electrónico</label>
+                    <input type="email" name="email"
+                      class="form-control <%= locals.errors && errors.email ? 'is-invalid' : null %>" id="email"
+                      placeholder="name@example.com" value="<%= locals.old && old.email ? old.email : null %>" />
+                    <small class="text-danger ms-2">
+                      <%= locals.errors && errors.email ? errors.email.msg : null %>
+                    </small>
+                  </div>
+                  <div class="col-12 col-md-6 mb-3">
+                    <label for="province" class="form__label">Provincia</label>
+                    <input type="province" name="province"
+                      class="form-control"
+                      id="province" />
+                    <small class="text-danger ms-2">
+                      <%= locals.errors && errors.password ? errors.password.msg : null %>
+                    </small>
+                  </div>
+                  <div class="col-12 col-md-6 mb-3">
+                    <label for="city" class="form__label">Ciudad</label>
+                    <input type="city" name="city"
+                      class="form-control"
+                      id="city" />
+
+                    <small class="text-danger ms-2">
+                      <%= locals.errors && errors.city ? errors.city.msg : null %>
+                    </small>
+                  </div>
+
+                  <div class=" mb-3">
+                    <label for="adress" class="form__label">Dirección</label>
+                    <input type="adress" name="adress"
+                      class="form-control"
+                      id="city" />
+
+                    <small class="text-danger ms-2">
+                      <%= locals.errors && errors.city ? errors.city.msg : null %>
+                    </small>
+                  </div>
+
+                  <div class="col-12 col-md-6 mb-3 w-100 mt-3 ">
+                    <div class="form-check text-dark">
+                      <input class="form-check-input" value="solo comprar" type="radio" name="userCategory" id="userCategory" checked>
+                      <label class="form-check-label" for="userCategory">
+                        Solo Comprar
+                      </label>
+                    </div>
+                    <div class="form-check text-dark">
+                        <input class="form-check-input" value="comprar y vender" type="radio" name="userCategory" id="userCategory">
+                        <label class="form-check-label" for="userCategory">
+                          Comprar y Vender
+                        </label>
+                      </div>
+                </div>
+
+
+                  <div class="mt-3 text-center">
+                    <label for="formFile" class="boton-guardarCambios">Cambiar imagen</label>
+                    <input class="form-control" name="userImage" type="file" id="formFile" hidden>
+                </div>
+
+
+                  <div class="col-lg-12  mb-3 d-flex align-items-center justify-content-center">
+                    <button class="button button__primary">Actualizar datos</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+      
+            </div>
+          </div>
+        </div>
+        <%- include('../partials/footer') %>
+    </main>
+  </body>
+
+</html>

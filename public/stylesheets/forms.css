@@ -54,6 +54,15 @@
     color:var(--colorAzul);
 }
 
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border-radius: 15px;
+    border: 1px solid #c0c0c0;
+    margin-top: 10px;
+    box-shadow: 2px 2px 5px #9124c7;
+}
+
 .form__input {
     width: 100%;
     padding: 8px;
@@ -61,6 +70,16 @@
     border: 1px solid #c0c0c0;
     margin-top: 10px;
     box-shadow: 2px 2px 5px #9124c7;
+}
+
+.boton-guardarCambios{
+    background: linear-gradient(90deg, rgba(47, 7, 67, 0.6) 0%, rgba(98, 2, 248, 0.6) 50%, rgba(0, 161, 255, 0.6) 100%);
+    border-radius: 7px;
+    margin: 10px;
+    box-shadow: 0px 7.27273px 2.90909px rgba(0, 0, 0, 0.4);
+    border: none;
+    padding: 5px;
+    color: white;
 }
 
 
