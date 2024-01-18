@@ -1,15 +1,25 @@
 [
-    {
-    "id": "c381b8c7-0c6f-40f7-9b9e-999366c0c49b",
-    "name": "Kevin",
-    "surname": "Espinola",
-    "email": "kevinalex.espinola09@gmail.com",
-    "password": "$2a$10$WUehIp0n8qR2ekWEA8fqROGgnZoGoSVMSB2ZiOhhwociaCL0r5mmu",
-    "userCategory": "solo comprar",
-    "province": "Buenos Aires",
-    "city": "José. C. Paz",
-    "adress": "Julio Sosa 1234",
-    "userImage": "User_1705595655189.jpg",
-    "role": "user"
-    }
+   {
+      "id": "c381b8c7-0c6f-40f7-9b9e-999366c0c49b",
+      "name": "Kevin",
+      "surname": "Espinola",
+      "email": "kevinalex.espinola09@gmail.com",
+      "password": "$2a$10$WUehIp0n8qR2ekWEA8fqROGgnZoGoSVMSB2ZiOhhwociaCL0r5mmu",
+      "userCategory": "solo comprar",
+      "province": "Buenos Aires",
+      "city": "José. C. Paz",
+      "adress": "Julio Sosa 1234",
+      "userImage": "User_1705595655189.jpg",
+      "role": "user"
+   },
+   {
+      "id": "39cf88c3-b152-42cb-b585-c86b2bbca49b",
+      "name": "Diego Martín",
+      "surname": "Romero",
+      "email": "mcflytix333@gmail.com",
+      "password": "$2a$10$uaMp3GvStQcQv4g.QD4qxuGCWMP/uSlb/8Ka2Xrs.ueWUV2wAly5G",
+      "userCategory": "comprar y vender",
+      "userImage": "User_1705615439226.jpg",
+      "role": "user"
+   }
 ]
