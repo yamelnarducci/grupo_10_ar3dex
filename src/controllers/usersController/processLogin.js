@@ -4,7 +4,7 @@ module.exports = (req,res) => {
 
     if(errors.isEmpty()){
 
-    const {id, name, role} = leerJSON('users').find(user => user.email === email)
+        const {id, name, role} = leerJSON('users').find(user => user.email === email)
 
         req.session.userLogin = {
             id,
@@ -12,7 +12,7 @@ module.exports = (req,res) => {
             role
         }
 
-        remember && res.cookie('kitchening4EV3R_user',req.session.userLogin,{
+        remember && res.cookie('Ar3dex forever!!!', req.session.userLogin, {
             maxAge : 1000 * 60 * 2
         })
 

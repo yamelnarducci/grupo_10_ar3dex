@@ -30,7 +30,6 @@ module.exports = (req,res) => {
             fs.unlinkSync(`./public/images/users/${req.files.userImage[0].filename}`)
         }
 
-        console.log(req.files.userImage[0].filename)
 
         return res.render('users/register', {
             old : req.body,

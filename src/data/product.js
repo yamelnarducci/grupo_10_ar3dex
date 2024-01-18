@@ -1,6 +1,6 @@
 const crypto = require('crypto')
 
-function Product(name, price, mainImage, images, category, description, offer, discount) {
+function Product(name, price, category, description, offer, discount, mainImage, images) {
     this.id = crypto.randomUUID();
     this.name = name.trim();
     this.price = price;
@@ -9,7 +9,7 @@ function Product(name, price, mainImage, images, category, description, offer, d
     this.category = category;
     this.description = description.trim();
     this.offer = offer;
-    this.discount = discount || 0;
+    this.discount = discount;
 }
 
 module.exports = Product

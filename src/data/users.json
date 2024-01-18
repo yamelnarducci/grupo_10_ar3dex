@@ -1,12 +1,22 @@
 [
-    {
-    "id": "c381b8c7-0c6f-40f7-9b9e-999366c0c49b",
-    "name": "Kevin",
-    "surname": "Espinola",
-    "email": "kevinalex.espinola09@gmail.com",
-    "password": "$2a$10$WUehIp0n8qR2ekWEA8fqROGgnZoGoSVMSB2ZiOhhwociaCL0r5mmu",
-    "userCategory": "solo comprar",
-    "userImage": "User_1705595655189.jpg",
-    "role": "user"
-    }
+   {
+      "id": "c381b8c7-0c6f-40f7-9b9e-999366c0c49b",
+      "name": "Kevin",
+      "surname": "Espinola",
+      "email": "kevinalex.espinola09@gmail.com",
+      "password": "$2a$10$WUehIp0n8qR2ekWEA8fqROGgnZoGoSVMSB2ZiOhhwociaCL0r5mmu",
+      "userCategory": "solo comprar",
+      "userImage": "User_1705595655189.jpg",
+      "role": "user"
+   },
+   {
+      "id": "099b3e37-257c-4f3c-8aba-11f5e8e6b579",
+      "name": "usuario",
+      "surname": "random",
+      "email": "usuariorandom@gmail.com",
+      "password": "$2a$10$tX.lmKo6KbpfmKnU.Pp42OnXnlSCrCtBnv9qrmKwtZn5ivqIs77Wu",
+      "userCategory": "solo comprar",
+      "userImage": "User_1705607539863.png",
+      "role": "user"
+   }
 ]
