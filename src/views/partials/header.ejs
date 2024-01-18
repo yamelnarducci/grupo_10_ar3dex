@@ -22,15 +22,34 @@
         <div class="div_ul">
           <li><a href="/productos/coleccion">Colección</a></li>
         </div>
+
+
+        <% if (locals.userLogin) { %>
+          <% if (userLogin.role === "admin") { %>
+            <div class="div_ul">
+              <li><a href="/admin">Dashboard</a></li>
+            </div>
+          <% }else{%>
+
+          <div class="div_ul">
+            <li><a href="/usuario">usuario</a></li>
+          </div>
+
+        <% } %>
+        <div class="div_ul">
+          <li><a href="/usuarios/salir">Salir</a></li>
+        </div>
+
+        <% }else{ %>
         <div class="div_ul">
           <li><a href="/usuarios/ingreso">Ingreso</a></li>
         </div>
         <div class="div_ul">
           <li><a href="/usuarios/registro">Registro</a></li>
         </div>
-        <div class="div_ul">
-          <li><a href="/admin">Dashboard</a></li>
-        </div>
+      <% } %>
+
+
       </ul>
     </nav>
     <form class="search-bar" action="/productos/buscar" method="GET">

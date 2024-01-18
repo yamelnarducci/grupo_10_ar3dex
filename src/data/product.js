@@ -9,7 +9,7 @@ function Product(name, price, mainImage, images, category, description, offer, d
     this.category = category;
     this.description = description.trim();
     this.offer = offer;
-    this.discount = discount;
+    this.discount = discount || 0;
 }
 
 module.exports = Product
