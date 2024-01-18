@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <%- include('../partials/head',{
-  title:"Login"
+    title:"Login"
 }) %>
 <body>
     <%- include('../partials/header') %>
@@ -13,16 +13,18 @@
                 <h3>Login</h3>
             
             </div>
-            <form action="/profile" class="form">
+            <form action="/profile" class="form" method="post">
             
                 <div class="form__box">
                     <label class="form__label" for="email">Email</label>
                     <input class="form__input" id="email" type="email" placeholder="correo@correo.com" name="email">
+                    <small class="text-danger ms-2" ><%= locals.errors && errors.email ? errors.email.msg : '' %></small>
                 </div>
                 <div class="form__box">
                     <label class="form__label" for="password">Contraseña</label>
                     <div class="form__box--position">
                         <input class="form__input" id="password" type="password" placeholder="tu contraseña" name="password"><span><i class="fa-solid fa-eye"></i></span>
+                        <small class="text-danger ms-2" ><%= locals.errors && errors.password ? errors.password.msg : '' %></small>
                     </div>
                 </div>
 
@@ -32,8 +34,8 @@
                     <label for="remember">Recordame</label>
                 </div>
                 <div class="form__box__pp">
-                  <p>¿No tenés cuenta? <a class="link" href="/usuarios/registro">Registrate</a></p>
-              </div>
+                    <p>¿No tenés cuenta? <a class="link" href="/usuarios/registro">Registrate</a></p>
+                </div>
                 <div class="box__end">
                     
                     <button class="button button__primary" type="submit">Ingresá</button>
@@ -46,6 +48,7 @@
     <div class="form__box__p">
         <p>¿Olvidaste tu contraseña? <a class="link" href="/">Restablecer contraseña</a></p>
     </div>
+    
     <%- include('../partials/footer') %>
     
     </body>
