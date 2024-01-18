@@ -1,11 +1,11 @@
 const login = require('./login');
 const register = require('./register');
-const createUser = require('./createUser');
+const processRegister = require('./processRegister');
 
 
 
 module.exports = {
     login,
     register,
-    createUser
+    processRegister
 }

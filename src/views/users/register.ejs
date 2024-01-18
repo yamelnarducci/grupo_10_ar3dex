@@ -16,30 +16,33 @@
         <form action="/usuarios/crearUsuario" method="POST" class="form" enctype="multipart/form-data">
             <div class="form__box">
                 <label class="form__label" for="name">Nombre</label>
-                <input class="form__input" id="name" type="text" placeholder="Escribí tu nombre" name="name">
-                <small class="form__msg-error">El nombre es obligatorio</small>
+                <input class="form__input" id="name" type="text" placeholder="Escribí tu nombre" name="name" value="<%= locals.old && old.name %>">
+                <small class="text-danger"><%= (locals.errors &&  errors.name) && errors.name.msg %></small>
             </div>
             <div class="form__box">
                 <label class="form__label" for="surname">Apellido</label>
-                <input class="form__input" id="surname" type="text" placeholder="Escribí tu apellido" name="surname">
+                <input class="form__input" id="surname" type="text" placeholder="Escribí tu apellido" name="surname" value="<%= locals.old && old.surname %>">
+                <small class="text-danger"><%= (locals.errors &&  errors.surname) && errors.surname.msg %></small>
             </div>
             <div class="form__box">
                 <label class="form__label" for="email">Email</label>
-                <input class="form__input" id="email" type="email" placeholder="correo@correo.com" name="email">
+                <input class="form__input" id="email" type="email" placeholder="correo@correo.com" name="email" value="<%= locals.old && old.email %>">
+                <small class="text-danger"><%= (locals.errors &&  errors.email) && errors.email.msg %></small>
             </div>
            
             <div class="form__box">
                 <label class="form__label" for="password">Contraseña</label>
                 <input class="form__input" id="password" type="password" placeholder="tu contraseña" name="password">
+                <small class="text-danger"><%= (locals.errors &&  errors.password) && errors.password.msg %></small>
             </div>
             <div class="form__box">
                 <label class="form__label" for="passwordConfirm">Confirma tu contraseña</label>
                 <input class="form__input" id="passwordConfirm" type="password" placeholder="confirma tu contraseña" name="passwordConfirm">
+                <small class="text-danger"><%= (locals.errors &&  errors.passwordConfirm) && errors.passwordConfirm.msg %></small>
             </div>
             <div class="col-12 mt-3">
-                <input name="userImage" type="file" class="form-control" id="userImage">
-                <label class="btn btn-outline-dark w-100 btn-primary text-outline-dark" for="userImage">Agregar imagen
-                    de perfil</label>
+                <input name="userImage" type="file" class="form-control" id="userImage" >
+                <label class="btn btn-outline-dark w-100 btn-primary text-outline-dark" for="userImage">Agregar imagen de perfil</label>
             </div>
             <div class="col-12 col-md-6 mb-3 w-100 mt-3 ">
                 <div class="form-check text-dark">
@@ -54,6 +57,15 @@
                       Comprar y Vender
                     </label>
                   </div>
+            </div>
+            <div class="col-12 col-md-6 mb-3 w-100 mt-3 ">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="1" name="remember" id="remember">
+                    <label class="form-check-label" for="remember">
+                        Acepto <a href="" class="link-primary" data-bs-toggle="modal" data-bs-target="#modalRemember">términos y condiciones</a>
+                    </label>
+                </div>
+                <small class="text-danger"><%= (locals.errors &&  errors.remember) && errors.remember.msg %></small>
             </div>
             
             <div class="redes-sociales"><p style="color: black;">O registrate tambíen con</p>
@@ -76,8 +88,11 @@
     <div class="form__box__2">
         <p>¿Ya estás registrado? <a class="link" href="/usuarios/ingreso">Ingresá</a></p>
     </div>
+    <%- include('../partials/modal-show-remember') %>
+    
 
     <%- include('../partials/footer') %>
+    <%- include('../partials/scripts') %>
 
 </body>
 </html>

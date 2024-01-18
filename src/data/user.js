@@ -1,13 +1,16 @@
+const bcryptjs = require('bcryptjs')
 const crypto = require('crypto')
 
-function User(name, surname, email, password, userImage, userCategory) {
+function User(name, surname, email, password, userCategory, userImage) {
     this.id = crypto.randomUUID();
     this.name = name.trim();
     this.surname = surname.trim();
     this.email = email.trim();
-    this.password = password.trim();
-    this.userImage = userImage ? userImage.filename : null;
+    this.password = bcryptjs.hashSync(password.trim(), 10);
     this.userCategory = userCategory;
+    this.userImage = userImage ? userImage[0].filename : null;
+    this.role = "user";
+    
 }
 
 module.exports = User
