@@ -1,4 +1,5 @@
 const { validationResult } = require("express-validator");
+const { leerJSON } = require("../../data");
 
 
 
@@ -18,7 +19,7 @@ module.exports = (req,res) => {
 
 
 
-        remember && res.cookie('Ar3dex forever!!!', req.session.userLogin, {
+        remember && res.cookie('AR3DEX4EV3R_user', req.session.userLogin, {
             maxAge : 1000 * 60 * 2
         })
         return res.redirect('/')
