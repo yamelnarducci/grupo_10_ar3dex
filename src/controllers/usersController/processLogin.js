@@ -1,5 +1,5 @@
 const { validationResult } = require("express-validator");
-
+const { leerJSON, escribirJSON } = require("../../data");
 
 
 module.exports = (req,res) => {
