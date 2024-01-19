@@ -35,7 +35,9 @@ app
 
   //* Configuracion de session */
   .use(session({
-    secret : 'Ar3dex forever!!!'
+    secret : 'Ar3dex forever!!!',
+    resave : true,
+    saveUninitialized : true
   }))
 
   .use(transferLocals)
