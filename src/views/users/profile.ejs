@@ -13,7 +13,7 @@
                 <h3 class="box__card--title">Perfil de usuario</h3>
               </div>
               <div class="card-body">
-                <form action="" class="row " method="POST">
+                <form action="/usuarios/perfil/editar/<%= id %>?_method=PUT" class="row " method="POST" enctype="multipart/form-data">
                   <div class="col-12 col-md-6 mb-3" >
                     <label for="name" class="form__label">Nombre</label>
                     <input type="text" name="name"
@@ -36,7 +36,7 @@
                     <label for="email" class="form__label">Correo electrónico</label>
                     <input type="email" name="email"
                       class="form-control <%= locals.errors && errors.email ? 'is-invalid' : null %>" id="email"
-                      placeholder="name@example.com" value="<%= locals.old && old.email ? old.email : null %>" />
+                      placeholder="Completa tu email" value="<%= locals.old && old.email ? old.email : null %>" />
                     <small class="text-danger ms-2">
                       <%= locals.errors && errors.email ? errors.email.msg : null %>
                     </small>
