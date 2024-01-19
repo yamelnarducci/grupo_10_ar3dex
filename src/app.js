@@ -11,6 +11,7 @@ const indexRouter = require('./routes/index.routes');
 const usersRouter = require('./routes/users.routes');
 const productsRouter = require('./routes/products.routes');
 const transferLocals = require('./middlewares/transferLocals');
+const cookieCheck = require('./middlewares/cookieCheck');
 
 const app = express();
 
@@ -40,6 +41,7 @@ app
     saveUninitialized : true
   }))
 
+  .use(cookieCheck)
   .use(transferLocals)
 
 

@@ -18,7 +18,7 @@ module.exports = (req,res) => {
 
 
 
-        remember && res.cookie('Ar3dex forever!!!', req.session.userLogin, {
+        remember && res.cookie('Ar3dex_foreverLovers', req.session.userLogin, {
             maxAge : 1000 * 60 * 2
         })
         return res.redirect('/')
