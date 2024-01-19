@@ -4,6 +4,7 @@ const { login, register, processRegister, processLogin, logout, profile } = requ
 const userUpload = require('../middlewares/userUpload');
 const userRegisterValidator = require('../../validations/user-register-validator');
 const userLoginValidator = require('../../validations/user-login-validator');
+const checkUserLogin = require('../middlewares/checkUserLogin');
 const router = express.Router();
 
 /* Usuarios */
@@ -13,7 +14,7 @@ router
     .get('/registro', register)
     .post('/ingreso',userLoginValidator,processLogin)
     .get('/salir',logout)
-    .get('/perfil',profile)
+    .get('/perfil',checkUserLogin,profile)
 
 
 module.exports = router;

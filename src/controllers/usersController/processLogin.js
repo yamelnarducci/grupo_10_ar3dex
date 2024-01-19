@@ -1,3 +1,7 @@
+const { validationResult } = require("express-validator");
+
+
+
 module.exports = (req,res) => {
     const errors = validationResult(req);
     const {email, remember} = req.body;
@@ -12,10 +16,11 @@ module.exports = (req,res) => {
             role
         }
 
+
+
         remember && res.cookie('Ar3dex forever!!!', req.session.userLogin, {
             maxAge : 1000 * 60 * 2
         })
-
         return res.redirect('/')
 
     }else {
