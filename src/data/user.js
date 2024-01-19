@@ -8,6 +8,9 @@ function User(name, surname, email, password, userCategory, userImage) {
     this.email = email.trim();
     this.password = bcryptjs.hashSync(password.trim(), 10);
     this.userCategory = userCategory;
+    this.province = "";
+    this.city = "";
+    this.address = "";
     this.userImage = userImage ? userImage[0].filename : null;
     this.role = "user";
     

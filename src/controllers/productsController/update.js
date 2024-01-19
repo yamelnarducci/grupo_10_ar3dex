@@ -1,4 +1,6 @@
 const { leerJSON, escribirJSON } = require('../../data')
+const { existsSync, unlinkSync } = require('fs')
+
 
 module.exports = (req, res) => {
     const { name, price, category, description, offer, discount } = req.body;
@@ -22,6 +24,7 @@ module.exports = (req, res) => {
         }
         return product
     })
+
 
     escribirJSON(productsUpdated, 'products')
 

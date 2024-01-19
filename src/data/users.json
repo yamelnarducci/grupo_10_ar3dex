@@ -1,15 +1,15 @@
 [
    {
       "id": "c381b8c7-0c6f-40f7-9b9e-999366c0c49b",
-      "name": "Kevin",
+      "name": "Kevinalexis",
       "surname": "Espinola",
       "email": "kevinalex.espinola09@gmail.com",
       "password": "$2a$10$WUehIp0n8qR2ekWEA8fqROGgnZoGoSVMSB2ZiOhhwociaCL0r5mmu",
-      "userCategory": "solo comprar",
+      "userCategory": "0",
       "province": "Buenos Aires",
-      "city": "José. C. Paz",
-      "adress": "Julio Sosa 1234",
-      "userImage": "User_1705595655189.jpg",
+      "city": "José C. Paz",
+      "address": "Julio Sosa 1234",
+      "userImage": null,
       "role": "user"
    },
    {
@@ -18,8 +18,37 @@
       "surname": "Romero",
       "email": "mcflytix333@gmail.com",
       "password": "$2a$10$uaMp3GvStQcQv4g.QD4qxuGCWMP/uSlb/8Ka2Xrs.ueWUV2wAly5G",
-      "userCategory": "comprar y vender",
+      "userCategory": true,
+      "province": "Buenos Aires",
+      "city": "",
+      "address": "",
       "userImage": "User_1705615439226.jpg",
+      "role": "user"
+   },
+   {
+      "id": "0590e8f2-cd00-464d-a67d-57db6b30d3ea",
+      "name": "otro",
+      "surname": "usuario",
+      "email": "fulano123@gmail.com",
+      "password": "$2a$10$dwByv57q9cTmyfKbADF0w.1hgWOa85TBmh73f2LtlJx5hs0AWPTIO",
+      "userCategory": "1",
+      "province": "",
+      "city": "",
+      "address": "",
+      "userImage": null,
+      "role": "user"
+   },
+   {
+      "id": "e6c04f20-30a9-4a7a-b67a-48d2af8c2c8b",
+      "name": "fulano",
+      "surname": "mengano",
+      "email": "fulano123@gmail.com",
+      "password": "$2a$10$esqvRRAeJECD3maKZKfrluVE8/BNFeOa60MGBQiUn4uUV3ufCxswO",
+      "userCategory": "false",
+      "province": "",
+      "city": "",
+      "address": "",
+      "userImage": "User_1705674140289.png",
       "role": "user"
    }
 ]
