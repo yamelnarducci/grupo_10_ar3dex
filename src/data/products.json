@@ -186,13 +186,13 @@
    },
    {
       "id": "9c50c99d-9376-4290-9d76-a5a336cca25a",
-      "name": "Avión",
+      "name": "Avióncito",
       "price": "5",
-      "mainImage": "1704239802338_biplano.PNG",
+      "mainImage": null,
       "images": [],
       "category": "figura",
       "description": "Biplano",
-      "offer": "false",
+      "offer": "true",
       "discount": ""
    }
 ]

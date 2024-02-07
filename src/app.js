@@ -11,6 +11,7 @@ const indexRouter = require('./routes/index.routes');
 const usersRouter = require('./routes/users.routes');
 const productsRouter = require('./routes/products.routes');
 const transferLocals = require('./middlewares/transferLocals');
+const cookieCheck = require('./middlewares/cookieCheck');
 
 const app = express();
 
@@ -35,9 +36,12 @@ app
 
   //* Configuracion de session */
   .use(session({
-    secret : 'Ar3dex forever!!!'
+    secret : 'Ar3dex es la onda!',
+    resave : true,
+    saveUninitialized : true
   }))
 
+  .use(cookieCheck)
   .use(transferLocals)
 
 
