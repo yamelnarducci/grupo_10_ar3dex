@@ -11,9 +11,9 @@ const userEditValidator = require('../../validations/user-edit-validator');
 
 /* Usuarios */
 router
-    .get('/ingreso',checkAuthUser, login )
+    .get('/ingreso',checkUserLogin, login )
     .post('/crearUsuario', userUpload.fields([{name : 'userImage'}]), userRegisterValidator, processRegister)
-    .get('/registro', checkAuthUser,register)
+    .get('/registro', checkUserLogin,register)
     .post('/ingreso',userLoginValidator,processLogin)
     .get('/salir',logout)
     .get('/perfil/:id',checkUserLogin,profile)

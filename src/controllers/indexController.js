@@ -1,15 +1,24 @@
-const {leerJSON} = require('../data');
+const db = require('../database/models');
+
+const fs = require('fs');
+const path = require('path') 
+//const productsFilePath= path.join(__dirname,'../data/products');
+//const products = JSON.parse(fs.readFileSync(productsFilePath,'utf-8'));
+
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 module.exports = {
     index: (req,res) => {
 
-        const products = leerJSON('products')
-        return res.render('index', {
-            products,
-            toThousand
+        db.Product.findAll()
+        .then(products => {
+            return res.render("colection", {
+                products,
+                toThousand,
+            })
         })
+        .catch(error => console.log(error))
     },
     cart: (req,res) => {
         return res.render('productCart')

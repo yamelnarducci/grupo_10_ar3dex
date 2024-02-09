@@ -15,13 +15,13 @@ module.exports = (sequelize, DataTypes) => {
   }
   Category.init({
     name: {
-      types: DataTypes.STRING,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     image: DataTypes.STRING 
   }, {
     sequelize,
-    modelName: 'Category',
+    modelName: 'Category'
   });
   return Category;
 };
