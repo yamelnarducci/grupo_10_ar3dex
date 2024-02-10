@@ -8,6 +8,7 @@ const userLoginValidator = require('../../validations/user-login-validator');
 const checkUserLogin = require('../middlewares/checkUserLogin');
 const profileUpdate = require('../controllers/usersController/profileUpdate');
 const userEditValidator = require('../../validations/user-edit-validator');
+const checkAuthUser = require('../middlewares/checkAuthUser')
 
 /* Usuarios */
 router
