@@ -8,12 +8,13 @@ const userLoginValidator = require('../../validations/user-login-validator');
 const checkUserLogin = require('../middlewares/checkUserLogin');
 const profileUpdate = require('../controllers/usersController/profileUpdate');
 const userEditValidator = require('../../validations/user-edit-validator');
+const checkAuthUser = require('../middlewares/checkAuthUser')
 
 /* Usuarios */
 router
-    .get('/ingreso',checkUserLogin, login )
+    .get('/ingreso',checkAuthUser, login )
     .post('/crearUsuario', userUpload.fields([{name : 'userImage'}]), userRegisterValidator, processRegister)
-    .get('/registro', checkUserLogin,register)
+    .get('/registro', checkAuthUser,register)
     .post('/ingreso',userLoginValidator,processLogin)
     .get('/salir',logout)
     .get('/perfil/:id',checkUserLogin,profile)
