@@ -14,6 +14,11 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Product.init({
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true
+    },
     name: 
     {
       type : DataTypes.STRING,
@@ -35,7 +40,7 @@ module.exports = (sequelize, DataTypes) => {
       type : DataTypes.INTEGER,
       allowNull: false
     },
-    image: DataTypes.STRING,
+    mainImage: DataTypes.STRING,
     categoryId: DataTypes.INTEGER
   }, {
     sequelize,

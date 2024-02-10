@@ -17,9 +17,9 @@
                 <div class="swiper-wrapper">
                   
                   <% products.forEach(product => { %>
-                   
+                  
                     <%- include('./partials/product-card',{
-                      ...product
+                    id: product.id, ...product
                     }) %>
                   <% }) %>
                   

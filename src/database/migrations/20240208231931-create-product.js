@@ -30,12 +30,14 @@ module.exports = {
         allowNull: false
       },
 
-      image: {
+      mainImage: {
         type: Sequelize.STRING,
+        allowNull: true
       },
 
       categoryId: {
         type: Sequelize.INTEGER,
+        allowNull: true
       },
       createdAt: {
         allowNull: false,

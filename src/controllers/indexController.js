@@ -13,7 +13,7 @@ module.exports = {
 
         db.Product.findAll()
         .then(products => {
-            return res.render("colection", {
+            return res.render("index", {
                 products,
                 toThousand,
             })
