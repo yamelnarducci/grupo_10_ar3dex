@@ -1,10 +1,19 @@
+const db = require('../../database/models');
+
+
+
+
 const { leerJSON } = require('../../data')
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 module.exports = (req,res) => {
 
-    const products = leerJSON('products')
-    return res.render('colection', {
-        products,
-        toThousand
+    db.Product.findAll()
+    .then(products =>{
+        return res.render('colection', {
+            products,
+            toThousand
+        })
     })
+    .catch(error => console.log(error))
+
 }
