@@ -16,11 +16,8 @@
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   
-                  <% products.forEach(product => { %>
-                  
-                    <%- include('./partials/product-card',{
-                      ...product
-                    }) %>
+                  <% productsOffer.forEach(product => { %>
+                    <%- include('./partials/cardProduct', {product}) %>
                   <% }) %>
                   
                 </div>
@@ -36,9 +33,10 @@
             <div class="col-12">
               <h2 class="products-title">Ofertas</h2>
             </div>
-        <% products.filter(product => product.offer === "true").forEach(product => { %>
-          <%- include('./partials/cardProduct',{product}) %>
-        <% }) %>
+            <% productsOffer.forEach(product => { %>
+            <%- include('./partials/cardProduct', {product}) %>
+            <% }) %>
+
       </div>
     </div>
 
