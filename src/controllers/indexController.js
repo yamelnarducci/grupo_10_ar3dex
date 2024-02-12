@@ -29,7 +29,9 @@ module.exports = {
     },
     searchAdmin : (req,res) => {
         const {keyword} = req.query
+
         const products = leerJSON('products');
+        
         const result = products.filter((product) => {
             return product.name.toLowerCase().includes(keyword.toLowerCase()) || product.category.toLowerCase().includes(keyword.toLowerCase())
         })

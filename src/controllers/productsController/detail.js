@@ -1,17 +1,16 @@
-const { leerJSON } = require('../../data')
+const db = require('../../database/models')
+const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+
+//const { leerJSON } = require('../../data')
 
 module.exports = (req,res) => {
         
-    const {id} = req.params;
-
-    const products = leerJSON('products');
-
-    const product = products.find(product => product.id == id)
-
-    const productosRelacionados = products.filter(item => item.category === product.category)
-
-    return res.render('products/product-detail', {
-        ...product,
-        productosRelacionados
-    })
+        db.Product.findByPk(req.params.id)
+        .then(product => {
+            return res.render('products/product-detail', {
+                ...product.dataValues,
+                toThousand,
+        })
+        })
+        .catch(error => console.log(error))
 }
