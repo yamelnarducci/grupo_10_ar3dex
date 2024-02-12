@@ -92,3 +92,27 @@
 ## Lo que consideramos que deberíamos dejar de hacer:
 
 * Individualizar, trabajar siempre solos.
+
+
+# Sprint 5
+
+# Conclusiones de la retro del cuarto sprint
+
+## Lo que consideramos que hicimos bien:
+
+* Dividimos las tareas mitad y mitad, comenzamos a trabajar rapido y nos permitió tener tiempo de sobra para corregir errores. Igual que en el sprint pasado. Llegamos a entregar a tiempo.
+
+## Lo que consideramos que hicimos mal:
+
+* Al igual que en el sprint pasado, no hicimos daily's
+* Faltó comunicación.
+
+## Lo que consideramos que deberíamos empezar a hacer:
+
+* Comunicarnos más, posiblemente volver a usar discord. Funcionaba muy bien con el resto del equipo o con los trabajos practicos grupales.
+* Empatizar más con el otro.
+* Trabajar en equipo
+
+## Lo que consideramos que deberíamos dejar de hacer:
+
+* Individualizar, trabajar siempre solos.
