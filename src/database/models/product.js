@@ -14,34 +14,21 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Product.init({
-    id: {
-      type: DataTypes.INTEGER,
-      primaryKey: true,
-      autoIncrement: true
-    },
-    name: 
-    {
-      type : DataTypes.STRING,
-      allowNull: false
-    },
-    
-    price: 
-    {
-      type : DataTypes.INTEGER,
-      allowNull: false
-    },
-    description: 
-    {
-      type : DataTypes.TEXT,
-      allowNull: false
-    },
-    discount: 
-    {
-      type : DataTypes.INTEGER,
-      allowNull: false
-    },
-    mainImage: DataTypes.STRING,
-    categoryId: DataTypes.INTEGER
+    name : { type: DataTypes.STRING, allowNull: false},
+
+    price: {type: DataTypes.INTEGER, allowNull: false},
+
+    mainImage:{ type: DataTypes.STRING, allowNull: false},
+
+    images: { type: DataTypes.STRING},
+
+    categoryId: { type: DataTypes.INTEGER},
+
+    description: {type: DataTypes.TEXT, allowNull: false},
+
+    offer: { type: DataTypes.STRING},
+
+    discount: { type: DataTypes.INTEGER, allowNull: false}
   }, {
     sequelize,
     modelName: 'Product',
