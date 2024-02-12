@@ -1,28 +1,2 @@
 
-[
-    {
-        "id":1,
-        "name":"picador",
-        "image": "Category-1.png"
-    },
-    {
-        "id":2,
-        "name":"mate",
-        "image": "Category-2.png"
-    },
-    {
-        "id":3,
-        "name":"figura",
-        "image": "Category-3.png"
-    },
-    {
-        "id":4,
-        "name":"mascara",
-        "image": "Category-4.png"
-    },
-    {
-        "id":5,
-        "name":"llavero",
-        "image": "Category-5.png"
-    }
-]
+["Picador", "Mate", "Figura", "Mascara", "Llavero"]

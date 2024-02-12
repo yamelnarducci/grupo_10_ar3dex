@@ -1,10 +1,6 @@
-const db = require('../database/models');
+const db = require('../database/models')
 
-const fs = require('fs');
-const path = require('path') 
-//const productsFilePath= path.join(__dirname,'../data/products');
-//const products = JSON.parse(fs.readFileSync(productsFilePath,'utf-8'));
-
+//const {leerJSON} = require('../data');
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
@@ -13,10 +9,12 @@ module.exports = {
 
         db.Product.findAll()
         .then(products => {
-            return res.render("index", {
-                products,
-                toThousand,
-            })
+            return res.render('index', {
+                products: products.filter(product => product.offer === "true"),
+                toThousand
+        })
+        
+
         })
         .catch(error => console.log(error))
     },
