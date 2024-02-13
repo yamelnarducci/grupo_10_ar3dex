@@ -5,11 +5,6 @@ module.exports = (req, res) => {
                 order: ['name']
         })
         .then(categories => {
-                /*
-                categories.forEach(category => {
-                console.log(category.name);
-                });*/
-                
                 return res.render("products/product-add",{
                 categories
                 });

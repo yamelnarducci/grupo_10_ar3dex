@@ -17,15 +17,20 @@ module.exports = {
 
         })
         .catch(error => console.log(error))
+        
     },
     cart: (req,res) => {
         return res.render('productCart')
     },
-    admin : (req,res) => {
-        const products = leerJSON('products')
-        return res.render('dashboard',{
-            products
-        })
+    admin : async(req,res) => {
+        try {
+            const products = await db.Product.findAll();
+            return res.render('dashboard', {
+                products
+            });
+        } catch (error) {
+            console.error(error);
+        }
     },
     searchAdmin : (req,res) => {
         const {keyword} = req.query
