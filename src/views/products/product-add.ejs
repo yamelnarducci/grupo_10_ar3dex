@@ -52,30 +52,28 @@
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
                                     <div class="form-floating">
-                                        <select name="category" class="form-select  bg-dark-subtle <%= (locals.errors &&  errors.category) && 'is-invalid' %>" id="category"
-                                            aria-label="Floating label select example">
-                                            <option value="" selected hidden></option>
+                                        <select name="categoryId" class="form-select bg-dark-subtle" id="categoryId" aria-label="Floating label select example">
+                                            <option value="" hidden selected>Elegí</option>
                                             <% categories.forEach(category => { %>
-                                                <option value="<%= category %>" <%= (locals.old && old.category && old.category == category) && 'selected' %> ><%= category %></option>
+                                                <option value="<%= category.id %>"><%= category.name %></option>
                                             <% }) %>
                                         </select>
-                                        <label for="category">Categoría</label>
+                                        <label for="categoryId">Categoría</label>
                                     </div>
-                                    <small class="text-danger ms-2"><%= (locals.errors &&  errors.category) && errors.category.msg %></small>
                                 </div>
                                 <div class="col-12 col-md-6 mb-3">
                                     <div class="form-check text-light">
                                         <input class="form-check-input" value="true" type="radio" name="offer" id="offer">
-                                        <label class="form-check-label" for="offer">
-                                          En Oferta
+                                        <label class="form-check-label" for="offer-en-oferta">
+                                            En Oferta
                                         </label>
-                                      </div>
-                                      <div class="form-check text-light">
+                                    </div>
+                                    <div class="form-check text-light">
                                         <input class="form-check-input" value="false" type="radio" name="offer" id="offer" checked>
-                                        <label class="form-check-label" for="offer">
-                                          Sin Oferta
+                                        <label class="form-check-label" for="offer-sin-oferta">
+                                            Sin Oferta
                                         </label>
-                                      </div>
+                                    </div>
                                 </div>
                                 
                                 <div class="col-12 col-md-3 mb-3">

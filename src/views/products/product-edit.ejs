@@ -51,11 +51,10 @@
                             <div class="col-12 col-md-6 mb-3">
                                 <div class="form-floating">
                                     <select name="category" class="form-select  bg-dark-subtle" id="category" aria-label="Floating label select example">
-                                        <option <%= category === "mate" && 'selected'%> value="mate">Mate</option>
-                                        <option <%= category === "picador" && 'selected'%> value="picador">Picador</option>
-                                        <option <%= category === "figura" && 'selected'%> value="figura">Figura</option>
-                                        <option <%= category === "mascara" && 'selected'%> value="mascara">Máscara</option>
-                                        <option <%= category === "llavero" && 'selected'%> value="llavero">Llavero</option>
+                                        <% categories.forEach(category => { %>
+                                            <option value="<%= category.id %>" <%= category.id === categoryId && 'selected' %>><%= category.name %></option>
+                                        <% }) %>
+
                                     </select>
                                     <label for="category">Categoría</label>
                                 </div>

@@ -1,14 +1,31 @@
-const { leerJSON } = require('../../data')
+const db = require('../../database/models');
 
-module.exports = (req,res) => {
-    const {id} = req.params;
+module.exports = (req, res) => {
 
-    const products = leerJSON('products');
+    Promise.all([
+        db.Category.findAll({ order: ['name'] }),
+        db.Product.findByPk(req.params.id)
+    ])
+    .then(([categories, product]) => {
+        if (!product) {
+            return res.status(404).send('Producto no encontrado');
+        }
 
-    const product = products.find(product => product.id == id)
 
-
-    return res.render('products/product-edit', {
-        ...product
+        return res.render('products/product-edit', {
+            product, 
+            categories,
+            name: product.name,
+            id: product.id,
+            price: product.price,
+            discount: product.discount,
+            categoryId: product.categoryId,
+            offer: product.offer,
+            description: product.description
+        });
     })
-}
+    .catch(error => {
+        console.error(error);
+        return res.status(500).send('Error interno del servidor');
+    });
+};
