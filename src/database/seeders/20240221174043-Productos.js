@@ -2,14 +2,13 @@
 
 const productsJSON = require('../../data/products.json')
 
-const productsDB = productsJSON.map(({name, price, mainImage, images, description, offer, discount, category }) => {
+const productsDB = productsJSON.map(({name, price, mainImage, description, offer, discount, category }) => {
   return {
     name: name.trim(),
     price,
     discount,
     description : description.trim(),
     mainImage: mainImage.trim(),
-    images: null,
     offer: offer.trim(),
     categoryId :  category == "picador" ? 1 : 
                   category == "mate" ? 2 : 

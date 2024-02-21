@@ -32,17 +32,24 @@ module.exports = {
             console.error(error);
         }
     },
-    searchAdmin : (req,res) => {
-        const {keyword} = req.query
-
-        const products = leerJSON('products');
-        
-        const result = products.filter((product) => {
-            return product.name.toLowerCase().includes(keyword.toLowerCase()) || product.category.toLowerCase().includes(keyword.toLowerCase())
-        })
-        return res.render('dashboard', {
-            products : result,
-            keyword
-        })
+    searchAdmin: async (req, res) => {
+        try {
+            const { keyword } = req.query;
+            const products = await db.Product.findAll({
+                where: {
+                    [db.Sequelize.Op.or]: [
+                        db.Sequelize.where(db.Sequelize.fn('LOWER', db.Sequelize.col('name')), 'LIKE', `%${keyword.toLowerCase()}%`),
+                        db.Sequelize.where(db.Sequelize.fn('LOWER', db.Sequelize.col('category')), 'LIKE', `%${keyword.toLowerCase()}%`)
+                    ]
+                }
+            });
+            return res.render('dashboard', {
+                products,
+                keyword
+            });
+        } catch (error) {
+            console.error(error);
+            return res.status(500).send('Error interno del servidor');
+        }
     }
 }

@@ -32,12 +32,12 @@
                 </div>
                 <h4 class="detalleProducto__main__articule__variaciones">VARIACIONES</h4>
                 <div class="detalleProducto__main__articule__div__nombre-y-imagen__div__carrusel">
-                    <% if (images && images.length > 0) { %>
+                    <% if (mainImage && mainImage.length > 0) { %>
                         <img src="/images/products/<%=  mainImage || 'default-image.webp' %>" alt="...">
-                        <% if (images.length > 1) { %>
+                        <% if (mainImage.length > 1) { %>
                             <img src="/images/products/<%=  mainImage || 'default-image.webp' %>" alt="...">
                         <% } %>
-                        <% if (images.length > 2) { %>
+                        <% if (mainImage.length > 2) { %>
                             <img src="/images/products/<%=  mainImage || 'default-image.webp' %>" alt="...">
                         <% } %>
                     <% } else { %>
@@ -59,7 +59,7 @@
             </div>
             <div class="detalleProducto__main__articule__caracteristicas__div__detalles">
                 <div class="detalleProducto__main__articule__caracteristicas__div__detalles__imagen">
-                    <img src="/images/products/<%= images || mainImage  || 'default-image.webp' %>" alt="...">
+                    <img src="/images/products/<%=  mainImage  || 'default-image.webp' %>" alt="...">
                 </div>
                 <div class="detalleProducto__main__articule__caracteristicas__div__detalles__material">
                     <h3>DETALLES</h3>
