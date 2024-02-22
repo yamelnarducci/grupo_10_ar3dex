@@ -50,5 +50,25 @@ module.exports = (req,res) => {
         fs.existsSync(`public/images/${mainImage[0].filename}`) &&
         fs.unlinkSync(`public/images/${mainImage[0].filename}`);
         }
-    }
-}
+        if (images){
+            images.forEach((image) => {
+                fs.existsSync(`public/images/${image}`) &&
+                fs.unlinkSync(`public/images/${image}`);
+                
+            });
+        }
+
+        db.Category.findAll({
+            order: [['name']]
+          })
+            .then(categories => {
+              return res.render("products/product-add", {
+                errors: errors.mapped(),
+                old: req.body,
+                categories,
+              });
+            })
+            .catch(error => console.log(error))
+       
+      }
+    };

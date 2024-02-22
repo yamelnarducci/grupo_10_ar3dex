@@ -17,7 +17,7 @@ module.exports= [
     check('description')
             .notEmpty().withMessage('Se requiere una descripción del producto').bail()
             .isLength({
-                min : 2,/* lo dejo en dos provicionalmente */
+                min : 20,
                 max : 500
             }).withMessage('La descripción debe tener entre 20 y 500 caracteres')
 ]
