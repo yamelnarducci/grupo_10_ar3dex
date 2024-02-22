@@ -22,7 +22,7 @@ module.exports = {
         allowNull: false
       },
       offer: {
-        type: Sequelize.STRING,
+        type: Sequelize.BOOLEAN,
         allowNull: false
       },
       discount: {

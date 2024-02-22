@@ -5,7 +5,7 @@ module.exports= [
         .notEmpty().withMessage('El nombre es obligatorio').bail(),
     check('price')
         .notEmpty().withMessage('El precio es obligatorio').bail(),
-    check('category')
+    check('categoryId')
         .notEmpty().withMessage('Se require especificar una categoría').bail(),
     body('mainImage')
         .custom((value, {req}) => {
@@ -17,7 +17,7 @@ module.exports= [
     check('description')
             .notEmpty().withMessage('Se requiere una descripción del producto').bail()
             .isLength({
-                min : 20,
+                min : 2,/* lo dejo en dos provicionalmente */
                 max : 500
             }).withMessage('La descripción debe tener entre 20 y 500 caracteres')
 ]

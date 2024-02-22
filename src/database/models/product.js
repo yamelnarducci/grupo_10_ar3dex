@@ -15,13 +15,17 @@ module.exports = (sequelize, DataTypes) => {
         as: "category",
         foreignKey: "categoryId",
       });
+      Product.hasMany(models.Image, {
+        as:'images',
+        foreignKey:'id_product'
+      })
     }
   }
   Product.init({
     name : { type: DataTypes.STRING, allowNull: false},
     price: {type: DataTypes.INTEGER, allowNull: false},
     description: {type: DataTypes.TEXT, allowNull: false},
-    offer: { type: DataTypes.STRING, allowNull: false},
+    offer: { type: DataTypes.BOOLEAN, allowNull: false},
     discount: { type: DataTypes.INTEGER, allowNull: false},
     mainImage: { type: DataTypes.STRING, allowNull: false},
     categoryId: DataTypes.INTEGER

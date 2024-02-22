@@ -9,7 +9,7 @@ const productsDB = productsJSON.map(({name, price, mainImage, description, offer
     discount,
     description : description.trim(),
     mainImage: mainImage.trim(),
-    offer: offer.trim(),
+    offer,
     categoryId :  category == "picador" ? 1 : 
                   category == "mate" ? 2 : 
                   category == "figura" ? 3 : 

@@ -11,7 +11,7 @@
       ],
       "category": "figura",
       "description": "Las figuras pintadas las realizamos bajo Pedido. Las fechas de entrega suelen variar según la cola de trabajo. El kit de montaje se suministra sin montar y requiere preparación del modelo (lijado, montaje...) Contacte para un tamaño distinto o si tiene alguna duda. Kurama/Kyuubi es el Mito Uzumaki, Kushina Uzumaki, Minato Namikaze, Black Zetsu, Sora, Ginkaku y Kinkaku, Menma Namikaze y el bijuu de Naruto de la serie Naruto Shippuden, capaz de doblar el fuego y el viento. Tamaño Grande: 21.3cm Alto X 14.6cm Ancho X 15.1cm Fondo",
-      "offer": "true",
+      "offer": 1,
       "discount": 15
    },
    {
@@ -26,7 +26,7 @@
       ],
       "category": "figura",
       "description": "Las figuras pintadas las realizamos bajo Pedido. Las fechas de entrega suelen variar según la cola de trabajo. El kit de montaje se suministra sin montar y requiere preparación del modelo (lijado, montaje...) Contacte para un tamaño distinto o si tiene alguna duda. Luffy es el protagonista de la serie de anime y manga One Piece. Es un pirata valiente y decidido que sueña con convertirse en el Rey de los Piratas y encontrar el tesoro más grande del mundo, el One Piece. 18cm Alto x 19,5cm Ancho PLA",
-      "offer": "true",
+      "offer": 1,
       "discount": 10
    },
    {
@@ -41,7 +41,7 @@
       ],
       "category": "llavero",
       "description": "Un Bulbasaur salvaje apareció! Pokémon numero 001 de la Region de Kanto. Pókemon Impreso en resina y base en PLA totalmente pintado a mano Descripción del personaje: Bulbasaur es un Pokémon de tipo planta/veneno introducido en la primera generación. Ternurita de 5.7cm Alto x 4cm Ancho PLA",
-      "offer": "true",
+      "offer": 1,
       "discount": 50
    },
    {
@@ -56,7 +56,7 @@
       ],
       "category": "figura",
       "description": "Las figuras pintadas las realizamos bajo Pedido. Las fechas de entrega suelen variar según la cola de trabajo. El kit de montaje se suministra sin montar y requiere preparación del modelo (lijado, montaje...) Contacte para un tamaño distinto o si tiene alguna duda. Vegeta SSJ de Akira Toriyama, un diseño NO exclusivo de Ar3Dex. Tamaño Grande: 30.7cm Alto X 14.5cm Ancho X 13.3cm Fondo ",
-      "offer": "true",
+      "offer": 1,
       "discount": 10
    },
    {
@@ -71,7 +71,7 @@
       ],
       "category": "figura",
       "description": "Naruto Uzumaki es el protagonista del manga y anime de Naruto. Es un joven ninja de la Aldea Oculta de la Hoja que tiene el objetivo de convertirse en Hokage, el líder de la aldea y el ninja más fuerte de todos. 25cm Alto x 17cm Ancho PLA",
-      "offer": "true",
+      "offer": 1,
       "discount": 25
    },
    {
@@ -82,7 +82,7 @@
       "images": ["1704222958518_descarga.jpeg"],
       "category": "figura",
       "description": "Las figuras pintadas las realizamos bajo Pedido. Las fechas de entrega suelen variar según la cola de trabajo. El kit de montaje se suministra sin montar y requiere preparación del modelo (lijado, montaje...) Contacte para un tamaño distinto o si tiene alguna duda. Luffy es el protagonista de la serie de anime y manga One Piece. Es un pirata valiente y decidido que sueña con convertirse en el Rey de los Piratas y encontrar el tesoro más grande del mundo, el One Piece. 18cm Alto x 19,5cm Ancho PLA",
-      "offer": "true",
+      "offer": 1,
       "discount": 10
    },
    {
@@ -93,7 +93,7 @@
       "images": ["1704223094375_pikachu.png"],
       "category": "llavero",
       "description": "Un Pikachu salvaje apareció! Pokémon numero 001 de la Region de Kanto. Pókemon Impreso en resina y base en PLA totalmente pintado a mano Descripción del personaje: Bulbasaur es un Pokémon de tipo planta/veneno introducido en la primera generación. Ternurita de 5.7cm Alto x 4cm Ancho PLA",
-      "offer": "true",
+      "offer": 1,
       "discount": 50
    },
    {
@@ -104,7 +104,7 @@
       "images": ["1704223181609_BANPRESTO-PICCOLO_resultado.png"],
       "category": "figura",
       "description": "Las figuras pintadas las realizamos bajo Pedido. Las fechas de entrega suelen variar según la cola de trabajo. El kit de montaje se suministra sin montar y requiere preparación del modelo (lijado, montaje...) Contacte para un tamaño distinto o si tiene alguna duda. Vegeta SSJ de Akira Toriyama, un diseño NO exclusivo de Ar3Dex. Tamaño Grande: 30.7cm Alto X 14.5cm Ancho X 13.3cm Fondo",
-      "offer": "true",
+      "offer": 1,
       "discount": 10
    },
    {
@@ -115,7 +115,7 @@
       "images": ["1704224155713_sasuke.jpg"],
       "category": "figura",
       "description": "Sasuke es el co-protagonista del manga y anime de Naruto. Es un joven ninja de la Aldea Oculta de la Hoja que tiene el objetivo de convertirse en Hokage, el líder de la aldea y el ninja más fuerte de todos. 25cm Alto x 17cm Ancho PLA",
-      "offer": "true",
+      "offer": 1,
       "discount": 25
    },
    {
@@ -126,7 +126,7 @@
       "images": ["1704224101754_jordan.jpeg"],
       "category": "llavero",
       "description": "LLAVERITO",
-      "offer": "true",
+      "offer": 1,
       "discount": 20
    },
    {
@@ -137,7 +137,7 @@
       "images": ["1704224049775_power mate.PNG"],
       "category": "mate",
       "description": "Mate grande",
-      "offer": "false",
+      "offer": 0,
       "discount": 0
    },
    {
@@ -148,7 +148,7 @@
       "images": ["1704223918976_perro salchicha.jpg"],
       "category": "figura",
       "description": "adorno, juguete",
-      "offer": "false",
+      "offer": 0,
       "discount": 0
    },
    {
@@ -159,7 +159,7 @@
       "images": ["1704223639177_rambo.jpeg"],
       "category": "figura",
       "description": "figura Rambo estilo retro",
-      "offer": "false",
+      "offer": 0,
       "discount": 0
    },
    {
@@ -170,7 +170,7 @@
       "images": [ "1704223540598_yuyu.jpg"],
       "category": "figura",
       "description": "Estatuilla",
-      "offer": "false",
+      "offer": 0,
       "discount": 0
    },
    {
@@ -181,7 +181,7 @@
       "images": ["1704239802338_biplano.PNG"],
       "category": "figura",
       "description": "Biplano",
-      "offer": "false",
+      "offer": 0,
       "discount": 0
    }
 ]
