@@ -47,13 +47,13 @@ module.exports = (req,res) => {
         .catch(error => console.log(error))
     }else{
         if (mainImage){
-        fs.existsSync(`public/images/${mainImage[0].filename}`) &&
-        fs.unlinkSync(`public/images/${mainImage[0].filename}`);
+        fs.existsSync(`public/images/products/${mainImage[0].filename}`) &&
+        fs.unlinkSync(`public/images/products/${mainImage[0].filename}`);
         }
         if (images){
             images.forEach((image) => {
-                fs.existsSync(`public/images/${image}`) &&
-                fs.unlinkSync(`public/images/${image}`);
+                fs.existsSync(`public/images/products/${image}`) &&
+                fs.unlinkSync(`public/images/products/${image}`);
                 
             });
         }
