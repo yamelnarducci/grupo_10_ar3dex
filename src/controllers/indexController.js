@@ -26,7 +26,8 @@ module.exports = {
         try {
             const products = await db.Product.findAll();
             return res.render('dashboard', {
-                products
+                products,
+                
             });
         } catch (error) {
             console.error(error);
