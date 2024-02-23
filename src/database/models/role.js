@@ -14,10 +14,22 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Role.init({
-    name : { type: DataTypes.STRING, allowNull: false},
-  }, {
+    name: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    }, {
     sequelize,
     modelName: 'Role',
-  });
+    });
   return Role;
 };
+
+  // Role.init({
+  //   name:{
+  //   types : DataTypes.STRING,
+  //   allowNull : false,
+  //   }, 
+  //   sequelize,
+  //   modelName: 'Role',
+  // });

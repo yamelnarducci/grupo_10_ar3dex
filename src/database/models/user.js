@@ -11,17 +11,33 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      User.belongsTo(models.Address, {
+        as: 'address', 
+        foreignKey: 'addressId'
+      });
     }
   }
   User.init({
-    name: { type: DataTypes.STRING, allowNull: false},
-    surname: { type: DataTypes.STRING, allowNull: false},
-    id_address: {type: DataTypes.INTEGER, allowNull: false},
-    phone: DataTypes.STRING,
-    email: { type: DataTypes.STRING, allowNull: false},
-    id_role: {type: DataTypes.INTEGER, allowNull: false},
-    password: { type: DataTypes.STRING, allowNull: false},
-    image: DataTypes.STRING
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    surname: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    email: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    password: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    phone: DataTypes.INTEGER,
+    image: DataTypes.STRING,
+    roleId: DataTypes.INTEGER,
+    addressId: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'User',

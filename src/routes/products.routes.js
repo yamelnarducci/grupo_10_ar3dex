@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 const { detail, add, edit, create, update, remove, colection, search } = require('../controllers/productsController');
 const upload = require('../middlewares/upload');
-const productAddValidatior = require('../../validations/product-add-validatior');
+const productAddValidatior = require('../validations/product-add-validatior');
 
 
 /* /productos */

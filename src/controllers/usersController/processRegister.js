@@ -2,35 +2,35 @@ const { validationResult } = require("express-validator");
 const { leerJSON, escribirJSON } = require("../../data");
 const User = require("../../data/user");
 const fs = require('fs')
+const bcryptjs = require('bcryptjs')
+const db = require('../../database/models')
 
 module.exports = (req,res) => {
 
     const errors = validationResult(req);
+    const {name, surname, email, password} = req.body;
 
     if(errors.isEmpty()){
-        
-        const {name, surname, email, password, userCategory} = req.body;
-    
-        const {userImage} = req.files;
-    
-        const newUser = new User(name, surname, email, password, userCategory, userImage);
-        const users = leerJSON('users');
-    
-        users.push(newUser);
-    
-        escribirJSON(users, 'users')
 
-        return res.redirect('/')
-    
+        db.Address.create()
+            .then(address => {
 
+                db.User.create({
+                    name,
+                    surname,
+                    email,
+                    password : bcryptjs.hashSync(password.trim(), 10),
+                    releId : 1,
+                    addressId : address.id
+                })
+                    .then(user => {
+                        console.log(user)
+                        return res.redirect('/')
+                    })
+            })
+            .catch(error=>console.log(error))
+            
     }else{
-
-        if(req.files.userImage){
-            fs.existsSync(`./public/images/users/${req.files.userImage[0].filename}`) &&
-            fs.unlinkSync(`./public/images/users/${req.files.userImage[0].filename}`)
-        }
-
-
         return res.render('users/register', {
             old : req.body,
             errors : errors.mapped()

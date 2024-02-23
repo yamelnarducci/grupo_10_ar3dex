@@ -1,5 +1,5 @@
 const { check, body } = require("express-validator");
-const { leerJSON } = require("../src/data");
+const { leerJSON } = require("../data");
 
 module.exports = [
     check('name')
@@ -19,27 +19,28 @@ module.exports = [
         .isEmail().withMessage('el Email tiene un formato inválido')
         .custom((value, {req}) => {
             const users = leerJSON('users');
-            const user = users.find(user => user.email === value.trim())
+            const user = users.find(user => user.email === value.trim());
+            const usuario = users.find(user => user.id === req.session.userLogin.id);
+
+            console.log(usuario)
 
             if(user){
-                return false
-            }
-            return true
+                if(usuario !== value.trim()){
+                    
+                    return true
+                }
+            }return false
         }).withMessage('El email ya se encutra registrado'),
-    check('password')
-        .notEmpty().withMessage('La contraseña es obligatoria')
+    check('address')
         .isLength({
-            min: 6,
-            max: 12
-        }),
-    body('passwordConfirm')
-        .notEmpty().withMessage('Debe confirmar la contraseña').bail()
-        .custom((value, {req}) => {
-            if(value != req.body.password){
-                return false
-            }
-            return true
-        }).withMessage('Las contraseñas no coinciden'),
-    check('remember')
-        .notEmpty().withMessage('Debe aceptar los terminos y condiciones')
+        max : 25
+        }).withMessage('Máximo 25 caracteres'),
+    check('city')
+        .isLength({
+        max : 20
+        }).withMessage('Máximo 20 caracteres'),
+    check('province')
+        .isLength({
+        max : 20
+        }).withMessage('Máximo 20 caracteres'),
 ]
