@@ -20,7 +20,7 @@ module.exports = (req,res) => {
                     surname,
                     email,
                     password : bcryptjs.hashSync(password.trim(), 10),
-                    releId : 1,
+                    roleId : 1,
                     addressId : address.id
                 })
                     .then(user => {
