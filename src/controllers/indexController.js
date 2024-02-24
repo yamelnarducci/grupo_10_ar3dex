@@ -1,6 +1,6 @@
 const db = require('../database/models')
 
-const {leerJSON} = require('../data');
+
 
 const toThousand = n => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
@@ -10,7 +10,7 @@ module.exports = {
         db.Product.findAll()
         .then(products => {
             return res.render('index', {
-                products: products.filter(product => product.offer === "true"),
+                products: products.filter(product => product.offer === true),
                 toThousand
         })
         
