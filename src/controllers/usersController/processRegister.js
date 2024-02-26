@@ -1,5 +1,5 @@
 const { validationResult } = require("express-validator");
-const { leerJSON, escribirJSON } = require("../../data");
+
 const User = require("../../data/user");
 const fs = require('fs')
 const bcryptjs = require('bcryptjs')

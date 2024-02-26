@@ -1,32 +1,81 @@
-const { leerJSON, escribirJSON } = require('../../data')
-const { existsSync, unlinkSync } = require('fs')
+const { existsSync, unlinkSync } = require("fs");
+const db = require('../../database/models');
 
+module.exports = async (req, res) => {
+    try {
+        const mainImage = req.files.mainImage;
+        const images = req.files.images;
 
-module.exports = (req, res) => {
-    const { name, price, category, description, offer, discount } = req.body;
+        const {
+            name,
+            price,
+            categoryId,
+            description,
+            offer,
+            discount
+        } = req.body;
 
-    const { id } = req.params
+        const { id } = req.params;
 
-    const {mainImage, images} = req.files;
+        const product = await db.Product.findByPk(id, {
+            include: ['images']
+        });
 
-    const products = leerJSON('products');
-
-    const productsUpdated = products.map(product => {
-        if (product.id == id) {
-            product.name = name.trim();
-            product.price = price;
-            product.mainImage = mainImage ? mainImage[0].filename : null;
-            product.images = images ? images.map((image) => image.filename) : [];
-            product.category = category;
-            product.description = description.trim();
-            product.offer = offer;
-            product.discount = discount;
+        if (!product) {
+            return res.status(404).send("Producto no encontrado");
         }
-        return product
-    })
 
+        if (images) {
+            existsSync("public/images/" + product.images) &&
+            unlinkSync("public/images/" + product.images);
+        }
 
-    escribirJSON(productsUpdated, 'products')
+        await db.Product.update(
+            {
+                name: name.trim(),
+                price,
+                description: description.trim(),
+                offer: +offer,
+                discount,
+                mainImage: mainImage ? mainImage[0].filename : null,
+                categoryId
+            },
+            {
+                where: {
+                    id,
+                }
+            },
+        );
 
-    return res.redirect('/admin')
-}
+        if (images) {
+            for (const image of product.images) {
+                existsSync("public/images/" + image.file) &&
+                unlinkSync("public/images/" + image.file);
+            }
+
+            await db.Image.destroy({
+                where: {
+                    id_product: id
+                }
+            });
+
+            const imagesDB = images.map(image => {
+                return {
+                    file: image.filename,
+                    id_product: product.id
+                };
+            });
+
+            await db.Image.bulkCreate(imagesDB, {
+                validate: true
+            });
+
+            return res.redirect("/admin");
+        } else {
+            return res.redirect("/admin");
+        }
+    } catch (error) {
+        console.error(error);
+        return res.status(500).send("Internal Server Error");
+    }
+};

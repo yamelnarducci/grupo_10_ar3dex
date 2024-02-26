@@ -31,7 +31,7 @@ module.exports = {
       },
       mainImage: {
         type: Sequelize.STRING,
-        allowNull: false
+        allowNull: true
       },
 
       categoryId: {
