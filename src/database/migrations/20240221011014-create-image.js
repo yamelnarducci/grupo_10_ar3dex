@@ -14,13 +14,8 @@ module.exports = {
         allowNull: false
       },
       id_product: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-        references: {
-          model: {
-            tableName: "Products"
-          }
-        }
+        type: Sequelize.STRING,
+        allowNull: false
       },
       createdAt: {
         allowNull: false,

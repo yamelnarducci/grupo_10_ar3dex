@@ -1,0 +1,62 @@
+[
+    {
+        "id":1,
+        "fileimages": ["kurama-1.jpg", "kurama-2.jpg", "kurama-3.PNG"]
+    },
+    {
+        "id":2,
+        "fileimages": ["luffy-1.jpg", "luffy-2.jpg", "luffy-3.PNG"]
+    },
+    {
+        "id":3,
+        "fileimages": "bulbasaur-1.png, bulbasaur-1.png, bulbasaur-3.PNG"
+    },
+    {
+        "id":4,
+        "fileimages": "vegeta-1.jpg, vegeta-2.jpg, vegeta-3.jpg"
+    },
+    {
+        "id":5,
+        "fileimages": "naruto-1.jpeg, naruto-2.jpg, naruto-3.jpeg"
+    },
+    {
+        "id":6,
+        "fileimages": "1704222958518_descarga.jpeg"
+    },
+    {
+        "id":7,
+        "fileimages": "1704223094375_pikachu.png"
+    },
+    {
+        "id":8,
+        "fileimages": "1704223181609_BANPRESTO-PICCOLO_resultado.png"
+    },
+    {
+        "id":9,
+        "fileimages": "1704224155713_sasuke.jpg"
+    },
+    {
+        "id":10,
+        "fileimages": "1704224101754_jordan.jpeg"
+    },
+    {
+        "id":11,
+        "fileimages": "1704224049775_power mate.PNG"
+    },
+    {
+        "id":12,
+        "fileimages": "1704223918976_perro salchicha.jpg"
+    },
+    {
+        "id":13,
+        "fileimages": "1704223639177_rambo.jpeg"
+    },
+    {
+        "id":14,
+        "fileimages": "1704223540598_yuyu.jpg"
+    },
+    {
+        "id":15,
+        "fileimages": "1704239802338_biplano.PNG"
+    }
+]

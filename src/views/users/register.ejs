@@ -14,12 +14,12 @@
           
         </div>
         <form action="/usuarios/crearUsuario" method="POST" class="form" enctype="multipart/form-data">
-            <div class="form__box">
+            <div class="col-12 col-md-6 mb-3 " id="nombre">
                 <label class="form__label" for="name">Nombre</label>
                 <input class="form__input" id="name" type="text" placeholder="Escribí tu nombre" name="name" value="<%= locals.old && old.name %>">
                 <small class="text-danger"><%= (locals.errors &&  errors.name) && errors.name.msg %></small>
             </div>
-            <div class="form__box">
+            <div class="col-12 col-md-6 mb-3">
                 <label class="form__label" for="surname">Apellido</label>
                 <input class="form__input" id="surname" type="text" placeholder="Escribí tu apellido" name="surname" value="<%= locals.old && old.surname %>">
                 <small class="text-danger"><%= (locals.errors &&  errors.surname) && errors.surname.msg %></small>
