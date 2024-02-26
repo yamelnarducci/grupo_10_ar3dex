@@ -29,7 +29,9 @@ module.exports = {
     },
     admin : async(req,res) => {
         try {
-            const products = await db.Product.findAll();
+            const products = await db.Product.findAll({
+                include: ['category']
+            });
 
             return res.render('dashboard', {
                 products,
